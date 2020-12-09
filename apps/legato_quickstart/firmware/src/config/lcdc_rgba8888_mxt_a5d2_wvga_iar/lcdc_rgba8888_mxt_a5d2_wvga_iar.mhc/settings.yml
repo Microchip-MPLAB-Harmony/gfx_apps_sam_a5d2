@@ -1,0 +1,14 @@
+configName: lcdc_rgba8888_mxt_a5d2_wvga_iar
+folderName: legato_qs_a5d2_xu_tm5000.IAR
+format_version: v1.0
+frameworkPath: ../../..
+processor: ATSAMA5D27
+projectName: legato_qs_a5d2_xu_tm5000.IAR
+settings:
+  PackageFilter: aerospace;audio;bsp;bt;core;csp;gfx;aerospace;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;usb;
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.7.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: .\dev_packs\Microchip\SAMA5D2_DFP\1.5.42\atdf\ATSAMA5D27.atdf
