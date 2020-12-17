@@ -4,7 +4,7 @@
 
 
 project: legato_quickstart
-creation_date: 2020-12-16T08:52:28.549-07:00[America/Phoenix]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2020-12-17T09:51:59.017-07:00[America/Phoenix]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 7
 mhc_mode: Standalone            # [IDE|Standalone|Headless]
 mhc_version: v3.6.5

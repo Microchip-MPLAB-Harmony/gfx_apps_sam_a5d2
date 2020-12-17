@@ -29,7 +29,7 @@ New features added in this release are as follows:
 
 The current known issues are as follows:
 
-- None
+- For all IAR configurations, make sure LE_DYNAMIC_VTABLES is define to 1 to ensure build success
 
 ### Development Tools
 

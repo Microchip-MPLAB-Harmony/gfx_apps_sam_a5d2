@@ -4,13 +4,13 @@
 
 
 project: legato_dashboard
-creation_date: 2020-12-16T07:55:31.833-07:00[America/Phoenix]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2020-12-17T09:40:17.763-07:00[America/Phoenix]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 7
 mhc_mode: IDE            # [IDE|Standalone|Headless]
 mhc_version: v3.6.5
-mplabx_version: v5.40        # if MPLAB X plugin only
+mplabx_version: v5.45        # if MPLAB X plugin only
 plugin_version: v3.6.2        # if MPLAB X plugin only
-compiler: XC32 (2.40)
+compiler: XC32 (2.50)
 
 modules:
     - {name: "core", version: "v3.8.1"}

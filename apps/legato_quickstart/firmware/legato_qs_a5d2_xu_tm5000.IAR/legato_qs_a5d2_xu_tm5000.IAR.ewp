@@ -66,7 +66,7 @@
                 </option>
                 <option>
                     <name>OGLastSavedByProductVersion</name>
-                    <state>8.40.1.21529</state>
+                    <state>8.32.3.20186</state>
                 </option>
                 <option>
                     <name>GeneralEnableMisra</name>
@@ -601,7 +601,7 @@
                 </option>
                 <option>
                     <name>AOutputFile</name>
-                    <state />
+                    <state>$FILE_BNAME$.o</state>
                 </option>
                 <option>
                     <name>ALimitErrorsCheck</name>
@@ -688,7 +688,7 @@
             <name>ILINK</name>
             <archiveVersion>0</archiveVersion>
             <data>
-                <version>23</version>
+                <version>22</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>1</debug>
                 <option>
@@ -705,7 +705,7 @@
                 </option>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>lcdc_rgba8888_mxt_a5d2_wvga.out</state>
+                    <state>legato_qs_a5d2_xu_tm5000.IAR.out</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>
@@ -817,7 +817,7 @@
                 </option>
                 <option>
                     <name>IlinkAdditionalLibs</name>
-                    
+                    <state />
                 </option>
                 <option>
                     <name>IlinkOverrideProgramEntryLabel</name>
@@ -829,7 +829,7 @@
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabel</name>
-                    <state>__iar_program_start</state>
+                    <state />
                 </option>
                 <option>
                     <name>DoFill</name>
@@ -1007,22 +1007,6 @@
                 <option>
                     <name>OILinkExtraOption</name>
                     <state>1</state>
-                </option>
-                <option>
-                    <name>IlinkRawBinaryFile2</name>
-                    <state />
-                </option>
-                <option>
-                    <name>IlinkRawBinarySymbol2</name>
-                    <state />
-                </option>
-                <option>
-                    <name>IlinkRawBinarySegment2</name>
-                    <state />
-                </option>
-                <option>
-                    <name>IlinkRawBinaryAlign2</name>
-                    <state />
                 </option>
             </data>
         </settings>
@@ -1746,7 +1730,7 @@
             <name>ILINK</name>
             <archiveVersion>0</archiveVersion>
             <data>
-                <version>23</version>
+                <version>22</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>0</debug>
                 <option>
@@ -1763,7 +1747,7 @@
                 </option>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>lcdc_rgba8888_mxt_a5d2_wvga.out</state>
+                    <state>###Unitialized###</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>
@@ -1887,7 +1871,7 @@
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabel</name>
-                    <state>__iar_program_start</state>
+                    <state />
                 </option>
                 <option>
                     <name>DoFill</name>
@@ -2065,22 +2049,6 @@
                 <option>
                     <name>OILinkExtraOption</name>
                     <state>1</state>
-                </option>
-                <option>
-                    <name>IlinkRawBinaryFile2</name>
-                    <state />
-                </option>
-                <option>
-                    <name>IlinkRawBinarySymbol2</name>
-                    <state />
-                </option>
-                <option>
-                    <name>IlinkRawBinarySegment2</name>
-                    <state />
-                </option>
-                <option>
-                    <name>IlinkRawBinaryAlign2</name>
-                    <state />
                 </option>
             </data>
         </settings>
