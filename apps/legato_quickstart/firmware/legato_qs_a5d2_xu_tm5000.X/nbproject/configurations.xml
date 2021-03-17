@@ -226,8 +226,10 @@
               <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/peripheral/tc/plib_tc_common.h</itemPath>
             </logicalFolder>
             <logicalFolder name="f8" displayName="twihs" projectFiles="true">
-              <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/peripheral/twihs/plib_twihs_master.h</itemPath>
-              <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/peripheral/twihs/plib_twihs1.h</itemPath>
+              <logicalFolder name="f1" displayName="master" projectFiles="true">
+                <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/peripheral/twihs/master/plib_twihs_master_common.h</itemPath>
+                <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/peripheral/twihs/master/plib_twihs1_master.h</itemPath>
+              </logicalFolder>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f4" displayName="system" projectFiles="true">
@@ -264,6 +266,7 @@
           <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/device.h</itemPath>
           <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/user.h</itemPath>
           <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/configuration.h</itemPath>
+          <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/interrupts.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f2" displayName="packs" projectFiles="true">
@@ -318,10 +321,78 @@
             <itemPath>../src/packs/ATSAMA5D27_DFP/component/wdt.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27_DFP/component/xdmac.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f3" displayName="instance" projectFiles="true">
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/acc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/adc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/aes.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/aesb.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/aic.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/aximx.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/chipid.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/classd.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/flexcom0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/flexcom1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/flexcom2.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/flexcom3.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/flexcom4.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/gmac.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/i2sc0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/i2sc1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/icm.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/isc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/l2cc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/lcdc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/matrix0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/matrix1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/mcan0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/mcan1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/mpddrc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/pdmic.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/pio.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/pit.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/pmc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/ptc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/pwm.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/qspi0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/qspi1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/rstc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/rtc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/rxlp.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/saic.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/sckc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/sdmmc0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/sdmmc1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/secumod.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/sfc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/sfr.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/sfrbu.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/sha.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/shdwc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/smc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/spi0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/spi1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/ssc0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/ssc1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/tc0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/tc1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/tdes.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/trng.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/twihs0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/twihs1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/uart0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/uart1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/uart2.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/uart3.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/uart4.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/udphs.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/xdmac0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27_DFP/instance/xdmac1.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f2" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAMA5D27_DFP/pio/sama5d27.h</itemPath>
           </logicalFolder>
-          <itemPath>../src/packs/ATSAMA5D27_DFP/atsama5d27.h</itemPath>
+          <itemPath>../src/packs/ATSAMA5D27_DFP/sama5d27.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="CMSIS" projectFiles="true">
           <logicalFolder name="f1" displayName="CMSIS" projectFiles="true">
@@ -629,7 +700,9 @@
               <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/peripheral/tc/plib_tc0.c</itemPath>
             </logicalFolder>
             <logicalFolder name="f8" displayName="twihs" projectFiles="true">
-              <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/peripheral/twihs/plib_twihs1.c</itemPath>
+              <logicalFolder name="f1" displayName="master" projectFiles="true">
+                <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/peripheral/twihs/master/plib_twihs1_master.c</itemPath>
+              </logicalFolder>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f2" displayName="stdio" projectFiles="true">
@@ -702,16 +775,21 @@
         <targetDevice>ATSAMA5D27</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>EdbgTool</platformTool>
+        <platformTool>samice</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.50</languageToolchainVersion>
+        <languageToolchainVersion>2.41</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
         <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.4.39"/>
+        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
       </packs>
       <ScriptingSettings>
+        <ScriptingSetting key="boot.load_adr" value=""/>
+        <ScriptingSetting key="boot.use" value="true"/>
+        <ScriptingSetting key="boot.entry_adr" value=""/>
+        <ScriptingSetting key="boot.path" value="${ProjectDir}\at91bootstrap"/>
+        <ScriptingSetting key="boot.prj" value=""/>
       </ScriptingSettings>
       <compileType>
         <linkerTool>
@@ -771,7 +849,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/lcdc_rgba8888_mxt_a5d2_wvga;../src/packs/ATSAMA5D27_DFP;../src/packs/CMSIS/CMSIS/Core_A/Include;../src/packs/CMSIS/;"/>
+                  value="../src;../src/config/lcdc_rgba8888_mxt_a5d2_wvga;../src/packs/ATSAMA5D27_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core_A/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -845,8 +923,7 @@
         <property key="no-startup-files" value="false"/>
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
-        <property key="preprocessor-macros"
-                  value=";ROM_LENGTH=-0x26f00000;ROM_ORIGIN=0x0x26f00000"/>
+        <property key="preprocessor-macros" value=""/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="serial-length" value=""/>
@@ -868,7 +945,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/lcdc_rgba8888_mxt_a5d2_wvga;../src/packs/ATSAMA5D27_DFP;../src/packs/CMSIS/CMSIS/Core_A/Include;../src/packs/CMSIS/;"/>
+                  value="../src;../src/config/lcdc_rgba8888_mxt_a5d2_wvga;../src/packs/ATSAMA5D27_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core_A/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -1460,6 +1537,33 @@
                   value=""/>
         <property key="warningmessagebreakoptions.warningmessages" value="holdstate"/>
       </Simulator>
+      <samice>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="communication.autoselectspeed" value="true"/>
+        <property key="communication.interface" value="swd"/>
+        <property key="communication.speed" value="4"/>
+        <property key="lastid" value=""/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram" value="true"/>
+        <property key="memories.instruction.ram.end"
+                  value="${memories.instruction.ram.end.value}"/>
+        <property key="memories.instruction.ram.start"
+                  value="${memories.instruction.ram.start.value}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.end" value="0x23ffff"/>
+        <property key="memories.programmemory.start" value="0x200000"/>
+        <property key="programoptions.eraseb4program" value="false"/>
+        <property key="programoptions.preservebootflash" value="false"/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveprogramrange.end" value="0x23ffff"/>
+        <property key="programoptions.preserveprogramrange.start" value="0x200000"/>
+        <property key="programoptions.resetafterprogram" value="true"/>
+        <property key="script.log_level" value="0"/>
+        <property key="script.show_output" value="false"/>
+      </samice>
     </conf>
   </confs>
 </configurationDescriptor>

@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.gfx_apps_sam_a5d2_legato_quickstart_legato_qs_a5d2_xu_tm5000",
-		"version": "3.9.0",
+		"version": "3.9.1",
 		"displayName": "Legato Quickstart Example for SAM A5D2x Family",
 		"projectName": "legato_quickstart_samA5D2_xu_wvga",
 		"shortDescription": "This demonstration provides a touch-enabled starting point for the legato graphics library.",

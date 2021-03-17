@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.gfx_apps_sam_a5d2_legato_dashboard_legato_db_a5d2_xu_tm5000",
-		"version": "3.9.0",
+		"version": "3.9.1",
 		"displayName": "Legato Dashboard Example for SAM A5D2x Family",
 		"projectName": "legato_dashboard_a5d2_xu_wvga",
 		"shortDescription": "This application presents a vehicle dashboard User Interface (UI).  It has a gauge to show the engine RPM (tachometer), dynamic text to show speed and distance traveled; and images for indicators like turn signals and other alerts. ",

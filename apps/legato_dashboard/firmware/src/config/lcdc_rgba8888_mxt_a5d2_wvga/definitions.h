@@ -62,7 +62,7 @@
 #include "system/time/sys_time.h"
 #include "bsp/bsp.h"
 #include "system/input/sys_input.h"
-#include "peripheral/twihs/plib_twihs1.h"
+#include "peripheral/twihs/master/plib_twihs1_master.h"
 #include "driver/input/drv_maxtouch.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
@@ -79,6 +79,9 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* CPU clock frequency */
+#define CPU_CLOCK_FREQUENCY 498000000
 
 // *****************************************************************************
 // *****************************************************************************

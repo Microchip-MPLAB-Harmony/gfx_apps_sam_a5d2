@@ -108,11 +108,6 @@ leResult leRadioButtonGroup_RemoveButton(leRadioButtonGroup* grp,
     
     btn->fn->setSelected(btn);
     
-    if(grp->buttonList.size == 0)
-    {
-        leRadioButtonGroup_Destroy(grp);
-    }
-    
     return LE_SUCCESS;
 }
 

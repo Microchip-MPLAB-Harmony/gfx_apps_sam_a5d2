@@ -33,7 +33,8 @@ Adding the **SAM A5D2 Xplained Ultra BSP** and **Legato Graphics w/ PDA TM5000 D
 Building the Application
 ------------------------
 
-The parent directory for this application is gfx/apps/legato\_dashboard. To build this application, use MPLAB X IDE to open the gfx/apps/legato\_dashboard/firmware/legato\_db\_a5d2\_xu\_tm5000.X project file.
+The parent directory for this application is gfx/apps/legato\_dashboard. To build this application, use MPLAB X IDE to open the gfx/apps/legato\_dashboard/firmware/legato\_db\_a5d2\_xu\_tm5000.X project file and press F11. 
+A successful build will generate a harmony.bin file in dist\lcdc_rgba8888_mxt_a5d2_wvga\production in the project folder.  
 
 The following table lists configuration properties:
 
@@ -46,13 +47,13 @@ The following table lists configuration properties:
 Configuring the Hardware
 ------------------------
 
-The final setup should be:
-
 Configure the hardware as follows:
 
 -   Connect the ribbon cable from the display to the LCD connector on the back of the SAM A5D2 Xplained Ultra board.
 
--   Power up the board by connecting the power adapter to power connector or a powered USB cable to the USB port on the SAM A5D2 Xplained Ultra board.
+-   Take an SD Card formatted with FAT32 file system, and copy the boot.bin binary file from this [location](../../../boot_image_revC/boot.bin). Also copy the harmony.bin file you generated from the "Building the Application" section.
+
+-	Insert the SD card to J19 of the SAM A5D2 Xplained Ultra board and power up the board by connecting a powered USB cable to either J14 or J23 USB port on the SAM A5D2 Xplained Ultra board.
 
 
 Running the Demonstration
