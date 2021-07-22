@@ -233,7 +233,7 @@ leResult leInput_InjectTouchMoved(uint32_t id, int32_t x, int32_t y)
             {   
 #ifdef INPUT_EVENT_DEBUG
                 printf("overwriting previous move event\n");
-#endif                
+#endif
 
                 // reorient touch coordinates if the user interface is rotated
 #if LE_TOUCH_ORIENTATION == 0
@@ -368,6 +368,9 @@ leEventResult handleTouchDown(leWidgetEvent_TouchDown* evt)
     if(leIsDrawing() == LE_TRUE)
         return LE_EVENT_DEFERRED;
 
+    evt->x = x;
+    evt->y = y;    
+    
     while(targetWidget != NULL)
     {
         targetWidget->fn->_handleEvent(targetWidget, (leEvent*)evt);

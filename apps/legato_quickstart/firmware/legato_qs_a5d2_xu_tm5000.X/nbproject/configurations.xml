@@ -68,6 +68,9 @@
                   <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/gfx/legato/image/jpeg/legato_imagedecoder_jpeg.h</itemPath>
                   <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/gfx/legato/image/jpeg/legato_imagedecoder_jpeg_common.h</itemPath>
                 </logicalFolder>
+                <logicalFolder name="f4" displayName="mono" projectFiles="true">
+                  <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/gfx/legato/image/mono/legato_imagedecoder_mono.h</itemPath>
+                </logicalFolder>
                 <logicalFolder name="f3" displayName="png" projectFiles="true">
                   <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/gfx/legato/image/png/legato_imagedecoder_png.h</itemPath>
                   <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/gfx/legato/image/png/lodepng.h</itemPath>
@@ -500,6 +503,11 @@
                   <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/gfx/legato/image/jpeg/legato_imagedecoder_jpeg_common.c</itemPath>
                   <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/gfx/legato/image/jpeg/jidctint.c</itemPath>
                 </logicalFolder>
+                <logicalFolder name="f4" displayName="mono" projectFiles="true">
+                  <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/gfx/legato/image/mono/legato_imagedecoder_mono.c</itemPath>
+                  <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/gfx/legato/image/mono/legato_imagedecoder_mono_read_internal.c</itemPath>
+                  <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/gfx/legato/image/mono/legato_imagedecoder_mono_read_stream.c</itemPath>
+                </logicalFolder>
                 <logicalFolder name="f3" displayName="png" projectFiles="true">
                   <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/gfx/legato/image/png/legato_imagedecoder_png.c</itemPath>
                   <itemPath>../src/config/lcdc_rgba8888_mxt_a5d2_wvga/gfx/legato/image/png/lodepng.c</itemPath>
@@ -775,20 +783,20 @@
         <targetDevice>ATSAMA5D27</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>samice</platformTool>
+        <platformTool>j32</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>3.01</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.4.39"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.5.53"/>
       </packs>
       <ScriptingSettings>
         <ScriptingSetting key="boot.load_adr" value=""/>
         <ScriptingSetting key="boot.use" value="true"/>
         <ScriptingSetting key="boot.entry_adr" value=""/>
-        <ScriptingSetting key="boot.path" value="${ProjectDir}\at91bootstrap"/>
+        <ScriptingSetting key="boot.path" value="${ProjectDir}\at91bootstrap.elf"/>
         <ScriptingSetting key="boot.prj" value=""/>
       </ScriptingSettings>
       <compileType>
@@ -861,6 +869,7 @@
         <property key="preprocessor-macros" value=""/>
         <property key="strict-ansi" value="false"/>
         <property key="support-ansi" value="false"/>
+        <property key="tentative-definitions" value=""/>
         <property key="toplevel-reordering" value=""/>
         <property key="unaligned-access" value=""/>
         <property key="use-cci" value="false"/>
@@ -892,6 +901,7 @@
       </C32-AS>
       <C32-CO>
         <property key="coverage-enable" value=""/>
+        <property key="stack-guidance" value="false"/>
       </C32-CO>
       <C32-LD>
         <property key="additional-options-use-response-files" value="false"/>
@@ -973,6 +983,7 @@
         <property key="omit-pack-options" value="1"/>
         <property key="relaxed-math" value="false"/>
         <property key="save-temps" value="false"/>
+        <property key="stack-smashing" value=""/>
         <property key="wpo-lto" value="false"/>
       </C32Global>
       <EdbgTool>
@@ -1537,8 +1548,13 @@
                   value=""/>
         <property key="warningmessagebreakoptions.warningmessages" value="holdstate"/>
       </Simulator>
-      <samice>
+      <Tool>
         <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="boot.entry_adr" value=""/>
+        <property key="boot.load_adr" value=""/>
+        <property key="boot.path" value="${ProjectDir}\at91bootstrap.elf"/>
+        <property key="boot.prj" value=""/>
+        <property key="boot.use" value="true"/>
         <property key="communication.autoselectspeed" value="true"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.speed" value="4"/>
@@ -1563,6 +1579,59 @@
         <property key="programoptions.resetafterprogram" value="true"/>
         <property key="script.log_level" value="0"/>
         <property key="script.show_output" value="false"/>
+      </Tool>
+      <j32>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="boot.entry_adr" value=""/>
+        <property key="boot.load_adr" value=""/>
+        <property key="boot.path" value="${ProjectDir}\at91bootstrap.elf"/>
+        <property key="boot.prj" value=""/>
+        <property key="boot.use" value="true"/>
+        <property key="communication.autoselectspeed" value="true"/>
+        <property key="communication.interface" value="swd"/>
+        <property key="communication.speed" value="4"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram" value="true"/>
+        <property key="memories.instruction.ram.end"
+                  value="${memories.instruction.ram.end.value}"/>
+        <property key="memories.instruction.ram.start"
+                  value="${memories.instruction.ram.start.value}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.end" value="0x23ffff"/>
+        <property key="memories.programmemory.start" value="0x200000"/>
+        <property key="programoptions.eraseb4program" value="false"/>
+        <property key="programoptions.preservebootflash" value="false"/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveprogramrange.end" value="0x23ffff"/>
+        <property key="programoptions.preserveprogramrange.start" value="0x200000"/>
+        <property key="programoptions.resetafterprogram" value="true"/>
+      </j32>
+      <samice>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="communication.autoselectspeed" value="true"/>
+        <property key="communication.interface" value="swd"/>
+        <property key="communication.speed" value="4"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram" value="true"/>
+        <property key="memories.instruction.ram.end"
+                  value="${memories.instruction.ram.end.value}"/>
+        <property key="memories.instruction.ram.start"
+                  value="${memories.instruction.ram.start.value}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.end" value="0x23ffff"/>
+        <property key="memories.programmemory.start" value="0x200000"/>
+        <property key="programoptions.eraseb4program" value="false"/>
+        <property key="programoptions.preservebootflash" value="false"/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveprogramrange.end" value="0x23ffff"/>
+        <property key="programoptions.preserveprogramrange.start" value="0x200000"/>
+        <property key="programoptions.resetafterprogram" value="true"/>
       </samice>
     </conf>
   </confs>

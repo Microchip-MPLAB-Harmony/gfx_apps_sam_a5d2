@@ -33,7 +33,7 @@ Adding the **SAM A5D2 Xplained Ultra BSP** and **Legato Graphics w/ PDA TM5000 D
 Building the Application
 ------------------------
 
-The parent directory for this application is gfx/apps/legato\_dashboard. To build this application, use MPLAB X IDE to open the gfx/apps/legato\_dashboard/firmware/legato\_db\_a5d2\_xu\_tm5000.X project file and press F11. 
+The parent directory for this application is gfx/apps/legato\_dashboard. To build this application, use MPLAB X IDE to open the gfx/apps/legato\_dashboard/firmware/legato\_db\_a5d2\_xu\_tm5000.X project folder and press F11. 
 A successful build will generate a harmony.bin file in dist\lcdc_rgba8888_mxt_a5d2_wvga\production in the project folder.  
 
 The following table lists configuration properties:
