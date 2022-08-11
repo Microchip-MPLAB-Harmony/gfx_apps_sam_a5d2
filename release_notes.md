@@ -5,7 +5,7 @@ nav_order: 99
 
 # ![MPLAB® Harmony Graphics Suite](./docs/html/mhgs.png) Microchip MPLAB® Harmony 3 Graphics application examples for SAM A5D2 Family
 
-## Harmony 3 Graphics application examples for SAM A5D2 family v3.9.2
+## Harmony 3 Graphics application examples for SAM A5D2 family v3.10.0
 
 ### Development kit and demo application support
 
@@ -15,6 +15,15 @@ Following table provides number of peripheral library examples available for dif
 |:-----------------:|:-------------------:|
 | [SAM A5D2 Xplained Ultra](https://www.microchip.com/Developmenttools/ProductDetails/ATSAMA5D2C-XULT)     | 7 |
 |
+
+## Release v3.10.0
+
+### New Features
+
+New features added in this release are as follows:
+
+- Added a camera (OV5640) example using the ISC interface
+- Added support for MPLAB Code Configurator
 
 ## Release v3.9.2
 

@@ -1,0 +1,14 @@
+configName: ov5640_mxt5000
+folderName: isc_cam_sam_a5d2_xult
+format_version: v1.0
+frameworkPath: ..\..\..\..\Harmony3
+processor: ATSAMA5D27
+projectName: isc_cam_sam_a5d2_xult
+settings:
+  PackageFilter: audio;audio_apps;azure_rtos;bsp;core;core_apps_sam_9x60;core_apps_sam_a5d2;crypto;csp;csp_apps_sam_9x60;Devices;dev_packs;gfx;gfx_apps_sam_9x60;gfx_apps_sam_a5d2;harmony-services;net;quick_docs;touch;usb
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: .\dev_packs\Microchip\SAMA5D2_DFP\1.7.91\atdf\ATSAMA5D27.atdf

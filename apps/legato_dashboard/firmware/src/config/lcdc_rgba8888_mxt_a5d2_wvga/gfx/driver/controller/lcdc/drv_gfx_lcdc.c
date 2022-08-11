@@ -73,9 +73,9 @@
 #define SYNC_RECT_COUNT 200
 
 
-#define LCDC_VSYNC_POLARITY LCDC_POLARITY_POSITIVE
+#define LCDC_VSYNC_POLARITY LCDC_POLARITY_NEGATIVE
 
-#define LCDC_HSYNC_POLARITY LCDC_POLARITY_POSITIVE
+#define LCDC_HSYNC_POLARITY LCDC_POLARITY_NEGATIVE
 
 #define LCDC_ENABLE_GLOBAL_HW_ALPHA 1
 
@@ -411,12 +411,15 @@ gfxResult DRV_LCDC_Initialize()
         //Note: Blender APIs don't do anything to the base layer
         LCDC_SetBlenderOverlayLayerEnable(drvLayer[layerCount].hwLayerID, true);
         LCDC_SetBlenderDMALayerEnable(drvLayer[layerCount].hwLayerID, true); //Enable blender DMA
-        LCDC_SetBlenderLocalAlphaEnable(drvLayer[layerCount].hwLayerID, true); //Use local alpha
-        LCDC_SetBlenderIteratedColorEnable(drvLayer[layerCount].hwLayerID, true); //Enable iterated color
-        LCDC_SetBlenderUseIteratedColor(drvLayer[layerCount].hwLayerID, true); //Use iterated color        
+		//Using Global Alpha
+        LCDC_SetBlenderGlobalAlphaEnable(drvLayer[layerCount].hwLayerID, true);
+        LCDC_SetBlenderGlobalAlpha(drvLayer[layerCount].hwLayerID, 0xFF);
         LCDC_UpdateOverlayAttributesEnable(drvLayer[layerCount].hwLayerID);
         LCDC_UpdateAttribute(drvLayer[layerCount].hwLayerID); //Apply the attributes
-
+        
+        LCDC_SetSytemBusDMABurstEnable(drvLayer[layerCount].hwLayerID, true); // Set DLBO in configuration reg 0
+        LCDC_SetSytemBusDMABurstLength(drvLayer[layerCount].hwLayerID, LCDC_BASECFG0_BLEN_AHB_INCR16_Val); // Set burst length
+       
         LCDC_SetChannelEnable(drvLayer[layerCount].hwLayerID, true);
         LCDC_IRQ_Enable(LCDC_INTERRUPT_BASE + drvLayer[layerCount].hwLayerID);
         
@@ -575,8 +578,8 @@ static gfxDriverIOCTLResponse DRV_LCDC_layerConfig(gfxDriverIOCTLRequest request
 
         LCDC_SetRGBModeInput(drvLayer[arg->id].hwLayerID, drvLayer[arg->id].colorspace);
 
-        LCDC_SetBlenderGlobalAlpha(drvLayer[arg->id].hwLayerID, drvLayer[arg->id].alpha);        
-
+        LCDC_SetBlenderGlobalAlpha(drvLayer[arg->id].hwLayerID, drvLayer[arg->id].alpha);  
+		
         LCDC_SetChannelEnable(drvLayer[arg->id].hwLayerID, drvLayer[arg->id].enabled);
 
         //Update overlay attributes before the start of the next frame

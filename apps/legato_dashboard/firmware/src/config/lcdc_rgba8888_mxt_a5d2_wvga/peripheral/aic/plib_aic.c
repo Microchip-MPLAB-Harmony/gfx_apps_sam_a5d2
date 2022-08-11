@@ -54,14 +54,14 @@
 // Section: AIC Implementation
 // *****************************************************************************
 // *****************************************************************************
-extern IrqData  irqData[2];
+extern IrqData  irqData[];
 extern uint32_t irqDataEntryCount;
 void DefaultInterruptHandlerForSpurious( void );
 
 void
 AIC_INT_Initialize( void )
 {   
-    const uint32_t      keyGuard = 0xb6d81c4d;
+    const uint32_t      keyGuard = 0xb6d81c4dU;
     const unsigned      MaxNumPeripherals = 77;
     const unsigned      MaxInterruptDepth = 8;
     uint32_t            ii;
@@ -88,7 +88,7 @@ AIC_INT_Initialize( void )
     }
 
     for( ii = 0; ii < irqDataEntryCount; ++ii )
-    {   // inspect irqData array in interrupts.c to see the configuration data 
+    {   // inspect irqData array in interrupts.c to see the configuration data
         aicPtr = (aic_registers_t *) irqData[ ii ].targetRegisters;
         aicPtr->AIC_SSR = AIC_SSR_INTSEL( irqData[ ii ].peripheralId );
         aicPtr->AIC_SMR = (aicPtr->AIC_SMR & ~AIC_SMR_SRCTYPE_Msk)  | AIC_SMR_SRCTYPE( irqData[ ii ].srcType );
@@ -112,7 +112,7 @@ void AIC_INT_IrqEnable( void )
 bool AIC_INT_IrqDisable( void )
 {
     /* Add a volatile qualifier to the return value to prevent the compiler from optimizing out this function */
-    volatile bool previousValue = (CPSR_I_Msk & __get_CPSR())? false:true;
+    volatile bool previousValue = ((CPSR_I_Msk & __get_CPSR()) != 0U)? false:true;
     __disable_irq();
     __DMB();
     return( previousValue );

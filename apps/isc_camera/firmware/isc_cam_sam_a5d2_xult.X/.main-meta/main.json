@@ -1,0 +1,80 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.3.0",
+		"name": "com.microchip.mcu32.mplabx.project.gfx_apps_sam_a5d2_isc_camera_legato_db_sam_a5d2_xult",
+		"version": "3.10.0",
+		"displayName": "Image Sensor Camera Example for SAM A5D2 Family",
+		"projectName": "isc_camera_sam_a5d2_xult",
+		"shortDescription": "Touch-enabled starting-point graphics demonstration for the Graphics Canvas and Legato Graphics library.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.45.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.50.0"
+			}
+		],
+		"dfp": {
+			"name": "ATSAMA5D27_DFP",
+			"semverRange": "^1.6.69"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.6.2"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "ATSAMA5D27",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"peripherals": [
+			"GPU",
+			"Touch",
+			"I2C",
+			"Display Controller"
+		],
+		"keywords": [
+			"MHC",
+			"MCC",
+			"MPU",
+			"Harmony",
+			"Middleware",
+			"Graphics",
+			"ATSAMA5D27",
+			"SAMA5D2",
+			"SAM A5D2",
+			"SAM A5D2 Family",
+			"External Memory",
+			"Memory",
+			"Legato",
+			"Canvas",
+			"Canvas Quickstart",
+			"Image Sensor Camera",
+			"Touch",
+			"I2C",
+			"Display Controller",
+            "MaxTouch 5.0in"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

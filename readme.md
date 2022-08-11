@@ -52,6 +52,14 @@ The following applications are provided to demonstrate a subset of the capabilit
 |  apps | [legato_quickstart](./apps/legato_quickstart/readme.md) | Legato Graphics Library Quickstart Examples | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 |       | [legato_dashboard](./apps/legato_dashboard/readme.md) | Legato Graphics Library and Canvas Example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 |       | [legato_canvas_quickstart](./apps/legato_canvas_quickstart/readme.md) | Legato Graphics Library and simple Canvas Example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
+
+## Camera application examples (ISC)
+
+The following application is provided to demonstrate the usage of the SAMA5D2 ISC interface.
+
+| Category | Item | Description | Release Type |
+| --- | --- | ---- |---- |
+|  apps |[isc_camera](./apps/isc_camera/readme.md) | Image Sensor Controller Example using OV5640 module with WVGA display | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 ____
 
 [![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_sam_a5d2/blob/master/mplab_harmony_license.md)

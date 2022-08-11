@@ -5,10 +5,10 @@ frameworkPath: ..\..\..\..\Harmony3
 processor: ATSAMA5D27
 projectName: blank_canvas_quickstart_a5d2_xu_wvga
 settings:
-  PackageFilter: bsp;core;core_apps_sam_9x60;core_apps_sam_a5d2;crypto;csp;csp_apps_sam_9x60;csp_apps_sam_a5d2;gfx;net;quick_docs;usb
+  PackageFilter: audio;audio_apps;azure_rtos;bsp;core;core_apps_sam_9x60;core_apps_sam_a5d2;crypto;csp;csp_apps_sam_9x60;Devices;dev_packs;gfx;gfx_apps_sam_9x60;gfx_apps_sam_a5d2;harmony-services;net;quick_docs;touch;usb
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
   TRUSTZONE: 'false'
-  CMSISPath: .\dev_packs\arm\CMSIS\5.7.0
+  CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
   MERGE_STRATEGY: USER_ALL
-  DFPPath: .\dev_packs\Microchip\SAMA5D2_DFP\1.5.53\atdf\ATSAMA5D27.atdf
+  DFPPath: .\dev_packs\Microchip\SAMA5D2_DFP\1.7.91\atdf\ATSAMA5D27.atdf

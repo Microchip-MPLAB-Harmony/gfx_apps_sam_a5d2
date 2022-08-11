@@ -58,3 +58,9 @@ This simple application demonstrates how to use Canvas library to display a pixe
 
 ![](./../docs/html/blank_canvas_qs.png)
 
+## Camera Examples 
+* [ISC Camera](./isc_camera/readme.md)
+
+This application uses the OV5640 arducam camera module to demonstrate the Image Sensor Controller interface in the SAMA5D2 Xplained target board.
+
+![](./../docs/html/ov5640_arducam.png)
