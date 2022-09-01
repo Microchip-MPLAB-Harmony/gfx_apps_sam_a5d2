@@ -1,11 +1,11 @@
 package:
   format-version: "1.0.0"
   name: "gfx_apps_sam_a5d2"
-  version: "3.10.0"
+  version: "3.10.1"
   type: "application"
-  status: "beta"
+  status: "production"
 
   dependencies:
     - name: "gfx"
       type: "package"
-      version: "3.11.0"
+      version: "3.11.1"

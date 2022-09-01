@@ -46,24 +46,15 @@
 		"keywords": [
 			"MHC",
 			"MCC",
-			"MPU",
+			"ARM",
 			"Harmony",
 			"Middleware",
 			"Graphics",
-			"ATSAMA5D27",
-			"SAMA5D2",
-			"SAM A5D2",
-			"SAM A5D2 Family",
-			"External Memory",
 			"Memory",
-			"Blank",
-			"Canvas",
-			"Canvas Quickstart",
-			"Blank Canvas Quickstart",
-			"Touch",
+			"Legato",
+			"maXTouch",
 			"I2C",
-			"Display Controller",
-            "MaxTouch 5.0in"
+			"Display"
 		],
 		"additionalData": {
 			"longDescription": {

@@ -32,7 +32,7 @@ The I2C driver in this project is used for communication with the OV5640 image s
 The pins are configured as follows through the MHC Pin Configuration tool:
 
 |Pin ID|Custom Name|Function|Direction|Latch|PIO Interrupt|
-|:-----------|:-------|:----------|:----------|:----------|:----------|:----------|
+|:-----------|:-------|:----------|:----------|:----------|:----------|
 |PB0|LED\_BLUE|LED_AL|Out|High|Disabled|
 |PB5|LED\_GREEN|LED_AL|Out|High|Disabled|
 |PB6|LED\_BLUE|LED\_AL|Out|High|Disabled|

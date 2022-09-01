@@ -37,33 +37,19 @@
 			}
 		},
 		"author": "Microchip",
-		"peripherals": [
-			"GPU",
-			"Touch",
-			"I2C",
-			"Display Controller"
-		],
 		"keywords": [
 			"MHC",
 			"MCC",
-			"MPU",
+			"ARM",
 			"Harmony",
 			"Middleware",
 			"Graphics",
-			"ATSAMA5D27",
-			"SAMA5D2",
-			"SAM A5D2",
-			"SAM A5D2 Family",
-			"External Memory",
 			"Memory",
 			"Legato",
-			"Canvas",
-			"Canvas Quickstart",
-			"Image Sensor Camera",
-			"Touch",
+			"maXTouch",
 			"I2C",
-			"Display Controller",
-            "MaxTouch 5.0in"
+			"Sensor",
+			"Display"
 		],
 		"additionalData": {
 			"longDescription": {
