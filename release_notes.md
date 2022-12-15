@@ -5,7 +5,7 @@ nav_order: 99
 
 # ![MPLAB® Harmony Graphics Suite](./docs/html/mhgs.png) Microchip MPLAB® Harmony 3 Graphics application examples for SAM A5D2 Family
 
-## Harmony 3 Graphics application examples for SAM A5D2 family v3.10.1
+## Harmony 3 Graphics application examples for SAM A5D2 family v3.11.0
 
 ### Development kit and demo application support
 
@@ -13,8 +13,26 @@ Following table provides number of peripheral library examples available for dif
 
 | Development Kits  | MPLABx applications |
 |:-----------------:|:-------------------:|
-| [SAM A5D2 Xplained Ultra](https://www.microchip.com/Developmenttools/ProductDetails/ATSAMA5D2C-XULT)     | 7 |
+| [SAM A5D27 SOM1 EK1](https://www.microchip.com/en-us/development-tool/atsama5d27-som1-ek1)     | 2 |
+| [SAM A5D27 WLSOM1 Evaluation Kit](https://www.microchip.com/en-us/development-tool/DM320117)     | 6 |
 |
+
+## Release v3.11.0
+
+### New Features
+
+
+New features added in this release are as follows:
+
+- Added Blank Quickstart for SAM A5D27 SOM1 EK1
+- Added Legato Quickstart for SAM A5D27 SOM1 EK1
+- Added Blank Quickstart for SAM A5D27 WLSOM1 Evaluation Kit
+- Added Blank Canvas Quickstart for SAM A5D27 WLSOM1 Evaluation Kit
+- Added Blank Quickstart Double Buffered for SAM A5D27 WLSOM1 Evaluation Kit
+- Added Legato Quickstart for SAM A5D27 WLSOM1 Evaluation Kit
+- Added Legato Dashboard for SAM A5D27 WLSOM1 Evaluation Kit
+- Added Legato Canvas Quickstart for SAM A5D27 WLSOM1 Evaluation Kit
+
 
 ## Release v3.10.1
 
@@ -79,13 +97,13 @@ The current known issues are as follows:
 
 ### Development Tools
 
-- [MPLAB® X IDE v6.00 and above](https://www.microchip.com/mplab/mplab-x-ide)
+- [MPLAB® X IDE v6.05 or above](https://www.microchip.com/mplab/mplab-x-ide)
 - MPLAB® X IDE plug-ins:
-    - [MPLAB® Code Configurator (MCC) v5.1.9](https://github.com/Microchip-MPLAB-Harmony/mplabx-plugin)
-    - [MPLAB® Harmony Configurator (MHC) v3.8.4 and above](https://github.com/Microchip-MPLAB-Harmony/mplabx-plugin)
-- [MPLAB® XC32 C/C++ Compiler v4.10 and above](https://www.microchip.com/mplab/compilers)
+    - [MPLAB® Code Configurator (MCC) v5.2.2 or above](https://github.com/Microchip-MPLAB-Harmony/mplabx-plugin)
+    - [MPLAB® Harmony Configurator (MHC) v3.8.5 or above](https://github.com/Microchip-MPLAB-Harmony/mplabx-plugin)
+- [MPLAB® XC32 C/C++ Compiler v4.20 or above](https://www.microchip.com/mplab/compilers)
 
 ### Dependent Components
 
-* [GFX v3.11.1](https://github.com/Microchip-MPLAB-Harmony/gfx/releases/tag/v3.11.1)
+* [GFX v3.12.0](https://github.com/Microchip-MPLAB-Harmony/gfx/releases/tag/v3.12.0)
 

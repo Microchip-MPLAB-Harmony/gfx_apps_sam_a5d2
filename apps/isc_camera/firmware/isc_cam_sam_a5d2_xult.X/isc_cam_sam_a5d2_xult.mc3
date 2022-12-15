@@ -71,7 +71,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.0"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.4"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -6123,7 +6123,7 @@
       </entry>
       <entry>
          <file>..\src\config\ov5640_mxt5000\peripheral\isc\plib_isc.c</file>
-         <hash>1cdfbf0b38945217a049cff4fcdb32f7d349ec2380a599de73941477da7adcc7</hash>
+         <hash>077e98f4a1eaa0eb4cdfab8970387b74bd63e66483415ce27f44372889635b72</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D27_DFP\instance\flexcom2.h</file>
@@ -6143,7 +6143,7 @@
       </entry>
       <entry>
          <file>..\src\config\ov5640_mxt5000\definitions.h</file>
-         <hash>339b752d630f2b298ff973847323a55cb43b6b3d495e620f27ef83f9e5ca9fcd</hash>
+         <hash>fcb55f9add0bf6f6cc0d31ba7657b2d7e23d6dbf8990e5401f31c765da7e45b2</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D27_DFP\component\smc.h</file>
@@ -6655,7 +6655,7 @@
       </entry>
       <entry>
          <file>..\src\config\ov5640_mxt5000\gfx\canvas\gfx_canvas.c</file>
-         <hash>de6834e41b642cadb8fce24b0b169a26d3f49d2043dd8977a9a1cdeadfe430cc</hash>
+         <hash>53a1e9996a8d13bff9687edf0dfb0bff768c302c2f3a640409578c72b338c9f1</hash>
       </entry>
       <entry>
          <file>..\src\config\ov5640_mxt5000\gfx\driver\controller\lcdc\drv_gfx_lcdc.h</file>
@@ -6663,7 +6663,7 @@
       </entry>
       <entry>
          <file>..\src\config\ov5640_mxt5000\gfx\canvas\gfx_canvas.h</file>
-         <hash>525fe673b8c4df9894e4ed492dc449d96608745b31ad62b28b6750c202d6ee4b</hash>
+         <hash>b76c00463a2aae0cfc35bdd6daad8b698ad88882e7a70445f273113737b15828</hash>
       </entry>
       <entry>
          <file>..\src\config\ov5640_mxt5000\gfx\driver\controller\lcdc\drv_gfx_lcdc.c</file>

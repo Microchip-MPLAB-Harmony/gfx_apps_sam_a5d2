@@ -12,5 +12,4 @@ This application shows how to use Canvas with Legato graphics library. A black r
 
 |MPLABX Configuration|Board Configuration|
 |:-------------------|:------------------|
-|[legato\_cqs\_a5d2\_xu\_tm5000.X](./firmware/legato_cqs_a5d2_xu_tm5000.X/readme.md)|[SAM A5D2 Xplained Ultra](https://www.microchip.com/Developmenttools/ProductDetails/ATSAMA5D2C-XULT) using LCDC internal graphics controller to drive the [High-Performance WVGA Display Module with maXTouch® Technology](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/AC320005-5)|
-
+|[legato\_cqs\_a5d27\_wlsom1\_ek1\_tm5000.X](./firmware/legato_cqs_a5d27_wlsom1_ek1_tm5000.X/readme.md)|[SAM A5D27 WLSOM1 EK1](https://www.microchip.com/en-us/development-tool/DM320117) using LCDC internal graphics controller to drive the [High-Performance WVGA Display Module with maXTouch® Technology](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/AC320005-5)|
