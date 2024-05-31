@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="65">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="config" displayName="config" projectFiles="true">
+        <logicalFolder name="sam_a5d29_cu"
+                       displayName="sam_a5d29_cu"
+                       projectFiles="true">
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/sam_a5d29_cu/bsp/bsp.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="driver" displayName="driver" projectFiles="true">
+            <logicalFolder name="i2c" displayName="i2c" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/driver/i2c/src/drv_i2c_local.h</itemPath>
+              <itemPath>../src/config/sam_a5d29_cu/driver/i2c/drv_i2c.h</itemPath>
+              <itemPath>../src/config/sam_a5d29_cu/driver/i2c/drv_i2c_definitions.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="input" displayName="input" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/driver/input/drv_maxtouch.h</itemPath>
+            </logicalFolder>
+            <itemPath>../src/config/sam_a5d29_cu/driver/driver_common.h</itemPath>
+            <itemPath>../src/config/sam_a5d29_cu/driver/driver.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="gfx" displayName="gfx" projectFiles="true">
+            <logicalFolder name="driver" displayName="driver" projectFiles="true">
+              <logicalFolder name="lcdc" displayName="lcdc" projectFiles="true">
+                <itemPath>../src/config/sam_a5d29_cu/gfx/driver/gfx_driver.h</itemPath>
+                <itemPath>../src/config/sam_a5d29_cu/gfx/driver/controller/lcdc/drv_gfx_lcdc.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="osal" displayName="osal" projectFiles="true">
+            <itemPath>../src/config/sam_a5d29_cu/osal/osal.h</itemPath>
+            <itemPath>../src/config/sam_a5d29_cu/osal/osal_impl_basic.h</itemPath>
+            <itemPath>../src/config/sam_a5d29_cu/osal/osal_definitions.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="aic" displayName="aic" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/aic/plib_aic.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="clk" displayName="clk" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/clk/plib_clk.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lcdc" displayName="lcdc" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/lcdc/plib_lcdc.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="matrix" displayName="matrix" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/matrix/plib_matrix.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="mmu" displayName="mmu" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/mmu/plib_mmu.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="pio" displayName="pio" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/pio/plib_pio.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="tc" displayName="tc" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/tc/plib_tc0.h</itemPath>
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/tc/plib_tc_common.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="twihs" displayName="twihs" projectFiles="true">
+              <logicalFolder name="master" displayName="master" projectFiles="true">
+                <itemPath>../src/config/sam_a5d29_cu/peripheral/twihs/master/plib_twihs0_master.h</itemPath>
+                <itemPath>../src/config/sam_a5d29_cu/peripheral/twihs/master/plib_twihs_master_common.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="uart" displayName="uart" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/uart/plib_uart_common.h</itemPath>
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/uart/plib_uart0.h</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="system" displayName="system" projectFiles="true">
+            <logicalFolder name="cache" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/system/cache/sys_cache.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="debug" displayName="debug" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/system/debug/sys_debug.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="input" displayName="input" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/system/input/sys_input_gesture.h</itemPath>
+              <itemPath>../src/config/sam_a5d29_cu/system/input/sys_input.h</itemPath>
+              <itemPath>../src/config/sam_a5d29_cu/system/input/sys_input_keyboard.h</itemPath>
+              <itemPath>../src/config/sam_a5d29_cu/system/input/sys_input_listener.h</itemPath>
+              <itemPath>../src/config/sam_a5d29_cu/system/input/sys_input_mouse.h</itemPath>
+              <itemPath>../src/config/sam_a5d29_cu/system/input/sys_input_touch.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="int" displayName="int" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/system/int/sys_int_mapping.h</itemPath>
+              <itemPath>../src/config/sam_a5d29_cu/system/int/sys_int.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="time" displayName="time" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/system/time/sys_time.h</itemPath>
+              <itemPath>../src/config/sam_a5d29_cu/system/time/sys_time_definitions.h</itemPath>
+              <itemPath>../src/config/sam_a5d29_cu/system/time/src/sys_time_local.h</itemPath>
+            </logicalFolder>
+            <itemPath>../src/config/sam_a5d29_cu/system/system.h</itemPath>
+            <itemPath>../src/config/sam_a5d29_cu/system/system_common.h</itemPath>
+            <itemPath>../src/config/sam_a5d29_cu/system/system_module.h</itemPath>
+          </logicalFolder>
+          <itemPath>../src/config/sam_a5d29_cu/sys_tasks.h</itemPath>
+          <itemPath>../src/config/sam_a5d29_cu/user.h</itemPath>
+          <itemPath>../src/config/sam_a5d29_cu/interrupts.h</itemPath>
+          <itemPath>../src/config/sam_a5d29_cu/configuration.h</itemPath>
+          <itemPath>../src/config/sam_a5d29_cu/device.h</itemPath>
+          <itemPath>../src/config/sam_a5d29_cu/device_cache.h</itemPath>
+          <itemPath>../src/config/sam_a5d29_cu/toolchain_specifics.h</itemPath>
+          <itemPath>../src/config/sam_a5d29_cu/definitions.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="Embedded_Wizard"
+                     displayName="Embedded_Wizard"
+                     projectFiles="true">
+        <logicalFolder name="Application" displayName="Application" projectFiles="true">
+          <logicalFolder name="GeneratedCode"
+                         displayName="GeneratedCode"
+                         projectFiles="true">
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/Application.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/BezierClock.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/BezierVariants.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/Core.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/Effects.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/ewfiles.inc</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/ewlocale.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/Graphics.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/Resources.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/Templates.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/Views.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/WidgetSet.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_ApplicationApplication.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_ApplicationFont.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_ApplicationUntitled.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockBackground.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockBackgroundFrame.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockBackgroundPreview.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockBezierClock.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockBlue.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockBubble.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockClockScreen.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockDark.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockDatePicker.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockDeviceClass.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockDigit.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockFontL.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockFontXXL.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockOrange.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockSettingsScreen.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockStyleScreen.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockTimePicker.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockTimerScreen.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_BezierClockTimerWheel.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreCursorEvent.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreCursorGrabEvent.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreCursorHit.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreDialogContext.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreDragEvent.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreEvent.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreGroup.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreKeyEvent.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreKeyPressHandler.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreLayoutContext.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreLayoutLineContext.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreLayoutQuadContext.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreLineView.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreOutline.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CorePropertyObserver.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreQuadView.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreRectView.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreResource.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreRoot.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreRotateTouchHandler.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreSimpleTouchHandler.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreSlideTouchHandler.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreTask.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreTaskQueue.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreTime.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreTimer.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreVerticalList.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_CoreView.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_EffectsEffect.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_EffectsEffectTimerClass.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_EffectsFader.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_EffectsFaderTask.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_EffectsFloatEffect.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_EffectsInt32Effect.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_EffectsPointEffect.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_EffectsPositionFader.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_EffectsShowHideTransition.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_EffectsSlideTransition.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_EffectsTimingList.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_EffectsTransition.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_EffectsVisibilityFader.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_GraphicsArcPath.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_GraphicsCanvas.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_GraphicsPath.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_ResourcesBitmap.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_ResourcesFont.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_ResourcesNavigationIconsMedium.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_ResourcesWhiteBitmapStripe.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_TemplatesPickerControl.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_TemplatesRotaryKnob.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_ViewsFillPath.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_ViewsFrame.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_ViewsImage.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_ViewsLine.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_ViewsRectangle.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_ViewsStrokePath.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_ViewsText.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_WidgetSetPushButton.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_WidgetSetPushButtonConfig.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_WidgetSetRadioButton.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_WidgetSetRadioButtonConfig.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/_WidgetSetWidgetConfig.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="Source" displayName="Source" projectFiles="true">
+            <itemPath>../src/Embedded_Wizard/Application/Source/DeviceDriver.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/Source/ewconfig.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/Source/ewdef.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/Source/ewmain.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="PlatformPackage"
+                       displayName="PlatformPackage"
+                       projectFiles="true">
+          <logicalFolder name="RGBA8888" displayName="RGBA8888" projectFiles="true">
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RGBA8888/ewextbmp.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RGBA8888/ewextfnt.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RGBA8888/ewextgfx.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RGBA8888/ewextpxl_RGBA8888.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RGBA8888/ewgfx.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RGBA8888/ewgfx.inc</itemPath>
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RGBA8888/ewgfxcore.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RGBA8888/ewgfxdefs.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RGBA8888/ewgfxdriver.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RGBA8888/ewgfxlinks.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RGBA8888/ewgfxres.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RGBA8888/ewgfxtasks.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="RTE" displayName="RTE" projectFiles="true">
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RTE/ewextrte.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RTE/ewrte.h</itemPath>
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RTE/ewrte.inc</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="TargetSpecific"
+                       displayName="TargetSpecific"
+                       projectFiles="true">
+          <itemPath>../src/Embedded_Wizard/TargetSpecific/ewconfig.h</itemPath>
+          <itemPath>../src/Embedded_Wizard/TargetSpecific/ew_bsp_console.h</itemPath>
+          <itemPath>../src/Embedded_Wizard/TargetSpecific/ew_bsp_display.h</itemPath>
+          <itemPath>../src/Embedded_Wizard/TargetSpecific/ew_bsp_os.h</itemPath>
+          <itemPath>../src/Embedded_Wizard/TargetSpecific/ew_bsp_touch.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="packs" displayName="packs" projectFiles="true">
+        <logicalFolder name="ATSAMA5D29_DFP"
+                       displayName="ATSAMA5D29_DFP"
+                       projectFiles="true">
+          <logicalFolder name="component" displayName="component" projectFiles="true">
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/sfc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/sdmmc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/twihs.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/uart.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/isc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/sfr.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/spi.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/pio.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/qspi.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/trng.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/l2cc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/rstc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/pwm.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/aesb.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/gmac.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/sfrbu.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/smc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/chipid.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/mpddrc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/acc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/ssc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/xdmac.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/icm.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/pdmic.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/tdes.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/aic.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/uhphs.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/adc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/mcan.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/aximx.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/sckc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/ptc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/flexcom.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/sha.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/matrix.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/pit.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/secumod.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/tc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/rxlp.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/classd.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/rtc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/aes.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/udphs.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/lcdc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/shdwc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/i2sc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/component/pmc.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="instance" displayName="instance" projectFiles="true">
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/chipid.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/uart2.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/ssc0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/sfc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/flexcom1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/i2sc1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/trng.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/xdmac0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/uart3.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/i2sc0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/icm.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/sdmmc1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/flexcom2.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pmc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/xdmac1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/classd.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/rxlp.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pit.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/uart0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/sdmmc0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/tc1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/flexcom3.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pdmic.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/qspi1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/sfr.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/ptc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/uart1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/sfrbu.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/twihs1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/lcdc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/flexcom4.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/gmac.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/aic.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/adc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/twihs0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/l2cc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/sha.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/matrix0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/acc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/aesb.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/tc0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/aximx.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/qspi0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/uart4.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/aes.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/saic.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/secumod.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/shdwc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/mcan0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/tdes.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/udphs.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/rtc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/matrix1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pwm.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/spi1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/pio.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/rstc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/isc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/ssc1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/mcan1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/mpddrc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/flexcom0.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/sckc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/hsmc.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D29_DFP/instance/spi0.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="pio" displayName="pio" projectFiles="true">
+            <itemPath>../src/packs/ATSAMA5D29_DFP/pio/sama5d29.h</itemPath>
+          </logicalFolder>
+          <itemPath>../src/packs/ATSAMA5D29_DFP/sama5d29.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="CMSIS" displayName="CMSIS" projectFiles="true">
+          <logicalFolder name="CMSIS" displayName="CMSIS" projectFiles="true">
+            <logicalFolder name="Core_A" displayName="Core_A" projectFiles="true">
+              <logicalFolder name="Include" displayName="Include" projectFiles="true">
+                <itemPath>../src/packs/CMSIS/CMSIS/Core_A/Include/cmsis_iccarm.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core_A/Include/cmsis_compiler.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core_A/Include/cmsis_gcc.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core_A/Include/cmsis_cp15.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core_A/Include/core_ca.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>../src/app.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <itemPath>Makefile</itemPath>
+      <itemPath>embedded_wizard_db_sam_a5d29_cu_tm5000.mc3</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+      <logicalFolder name="config" displayName="config" projectFiles="true">
+        <logicalFolder name="sam_a5d29_cu"
+                       displayName="sam_a5d29_cu"
+                       projectFiles="true">
+          <itemPath>../src/config/sam_a5d29_cu/ddr.ld</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="config" displayName="config" projectFiles="true">
+        <logicalFolder name="sam_a5d29_cu"
+                       displayName="sam_a5d29_cu"
+                       projectFiles="true">
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/sam_a5d29_cu/bsp/bsp.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="driver" displayName="driver" projectFiles="true">
+            <logicalFolder name="i2c" displayName="i2c" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/driver/i2c/src/drv_i2c.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="input" displayName="input" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/driver/input/drv_maxtouch.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="gfx" displayName="gfx" projectFiles="true">
+            <logicalFolder name="driver" displayName="driver" projectFiles="true">
+              <logicalFolder name="lcdc" displayName="lcdc" projectFiles="true">
+                <itemPath>../src/config/sam_a5d29_cu/gfx/driver/gfx_driver.c</itemPath>
+                <itemPath>../src/config/sam_a5d29_cu/gfx/driver/controller/lcdc/drv_gfx_lcdc.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="aic" displayName="aic" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/aic/plib_aic.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="clk" displayName="clk" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/clk/plib_clk.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="lcdc" displayName="lcdc" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/lcdc/plib_lcdc.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="matrix" displayName="matrix" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/matrix/plib_matrix.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="mmu" displayName="mmu" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/mmu/plib_mmu.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="pio" displayName="pio" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/pio/plib_pio.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="tc" displayName="tc" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/tc/plib_tc0.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="twihs" displayName="twihs" projectFiles="true">
+              <logicalFolder name="master" displayName="master" projectFiles="true">
+                <itemPath>../src/config/sam_a5d29_cu/peripheral/twihs/master/plib_twihs0_master.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="uart" displayName="uart" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/peripheral/uart/plib_uart0.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="stdio" displayName="stdio" projectFiles="true">
+            <itemPath>../src/config/sam_a5d29_cu/stdio/xc32_monitor.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="system" displayName="system" projectFiles="true">
+            <logicalFolder name="cache" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/system/cache/sys_cache.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="input" displayName="input" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/system/input/sys_input.c</itemPath>
+              <itemPath>../src/config/sam_a5d29_cu/system/input/sys_input_listener.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="int" displayName="int" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/system/int/src/sys_int.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="time" displayName="time" projectFiles="true">
+              <itemPath>../src/config/sam_a5d29_cu/system/time/src/sys_time.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <itemPath>../src/config/sam_a5d29_cu/initialization.c</itemPath>
+          <itemPath>../src/config/sam_a5d29_cu/interrupts.c</itemPath>
+          <itemPath>../src/config/sam_a5d29_cu/tasks.c</itemPath>
+          <itemPath>../src/config/sam_a5d29_cu/fault_handlers.c</itemPath>
+          <itemPath>../src/config/sam_a5d29_cu/cstartup.S</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="Embedded_Wizard"
+                     displayName="Embedded_Wizard"
+                     projectFiles="true">
+        <logicalFolder name="Application" displayName="Application" projectFiles="true">
+          <logicalFolder name="GeneratedCode"
+                         displayName="GeneratedCode"
+                         projectFiles="true">
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/Application.c</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/BezierClock.c</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/BezierVariants.c</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/Core.c</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/Effects.c</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/Graphics.c</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/Resources.c</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/Templates.c</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/Views.c</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/GeneratedCode/WidgetSet.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="Source" displayName="Source" projectFiles="true">
+            <itemPath>../src/Embedded_Wizard/Application/Source/DeviceDriver.c</itemPath>
+            <itemPath>../src/Embedded_Wizard/Application/Source/ewmain.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="PlatformPackage"
+                       displayName="PlatformPackage"
+                       projectFiles="true">
+          <logicalFolder name="RGBA8888" displayName="RGBA8888" projectFiles="true">
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RGBA8888/ewextgfx.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="RTE" displayName="RTE" projectFiles="true">
+            <itemPath>../src/Embedded_Wizard/PlatformPackage/RTE/ewextrte.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="TargetSpecific"
+                       displayName="TargetSpecific"
+                       projectFiles="true">
+          <itemPath>../src/Embedded_Wizard/TargetSpecific/ew_bsp_console.c</itemPath>
+          <itemPath>../src/Embedded_Wizard/TargetSpecific/ew_bsp_display.c</itemPath>
+          <itemPath>../src/Embedded_Wizard/TargetSpecific/ew_bsp_os.c</itemPath>
+          <itemPath>../src/Embedded_Wizard/TargetSpecific/ew_bsp_touch.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>../src/config/sam_a5d29_cu/pin_configurations.csv</itemPath>
+      <itemPath>../src/main.c</itemPath>
+      <itemPath>../src/app.c</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../../../../../OneDrive - Microchip Technology Inc/Desktop/embedded_wizard_gcc/src/Embedded_Wizard</Elem>
+    <Elem>../src/Embedded_Wizard</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="sam_a5d29_cu" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>ATSAMA5D29</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>j32</platformTool>
+        <languageToolchain>ARM</languageToolchain>
+        <languageToolchainVersion>10.3.1</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <packs>
+        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.11.220"/>
+        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+      </packs>
+      <ScriptingSettings>
+        <ScriptingSetting key="boot.load_adr" value=""/>
+        <ScriptingSetting key="boot.use" value="true"/>
+        <ScriptingSetting key="boot.entry_adr" value=""/>
+        <ScriptingSetting key="boot.path" value="${ProjectDir}\at91bootstrap.elf"/>
+        <ScriptingSetting key="boot.prj" value=""/>
+      </ScriptingSettings>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibFileItem>../src/Embedded_Wizard/PlatformPackage/RGBA8888/libewgfx.a</linkerLibFileItem>
+            <linkerLibFileItem>../src/Embedded_Wizard/PlatformPackage/RTE/libewrte.a</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+        <archiverTool>
+        </archiverTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+        <subordinates>
+        </subordinates>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <ARM-AR>
+        <property key="archiver-flags" value="-r"/>
+      </ARM-AR>
+      <ARM-AS>
+        <property key="announce-version" value="false"/>
+        <property key="include-paths" value=""/>
+        <property key="suppress-warnings" value="false"/>
+      </ARM-AS>
+      <ARM-AS-PRE>
+        <property key="announce-version" value="false"/>
+        <property key="include-paths" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros-undefined" value=""/>
+        <property key="suppress-warnings" value="false"/>
+      </ARM-AS-PRE>
+      <ARM-CPP>
+        <property key="additional-warnings" value="true"/>
+        <property key="called-functions-located" value="true"/>
+        <property key="default-bitfield-type" value="false"/>
+        <property key="default-char-type" value="false"/>
+        <property key="disable-extra-code-exception" value="true"/>
+        <property key="disable-extra-code-generation" value="true"/>
+        <property key="extra-include-directories" value=""/>
+        <property key="extra-warnings" value="false"/>
+        <property key="fast-math" value="false"/>
+        <property key="garbage-collect-data" value="false"/>
+        <property key="garbage-collect-functions" value="true"/>
+        <property key="inhibit-all" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="no-system-directories" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="position-independent" value="false"/>
+        <property key="preprocess-only" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros-undefined" value=""/>
+        <property key="strict-ansi" value="false"/>
+        <property key="strict-ansi-errors" value="false"/>
+        <property key="syntax-only" value="false"/>
+        <property key="undefined-identifier" value="false"/>
+        <property key="unsafe-math" value="false"/>
+        <property key="use-rodata" value="false"/>
+        <property key="verbose" value="false"/>
+      </ARM-CPP>
+      <ARM-GCC>
+        <property key="additional-warnings" value="true"/>
+        <property key="called-functions-located" value="true"/>
+        <property key="default-bitfield-type" value="false"/>
+        <property key="default-char-type" value="false"/>
+        <property key="extra-include-directories" value=""/>
+        <property key="extra-warnings" value="false"/>
+        <property key="fast-math" value="false"/>
+        <property key="garbage-collect-data" value="false"/>
+        <property key="garbage-collect-functions" value="true"/>
+        <property key="inhibit-all" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="no-system-directories" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="position-independent" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros-undefined" value=""/>
+        <property key="strict-ansi" value="false"/>
+        <property key="strict-ansi-errors" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="syntax-only" value="false"/>
+        <property key="undefined-identifier" value="false"/>
+        <property key="unsafe-math" value="false"/>
+        <property key="verbose" value="false"/>
+        <appendMe value="-ggdb3 -mfloat-abi=hard -mfpu=neon-vfpv4  -ffunction-sections -fdata-sections -fno-common  -Wall -mlong-calls "/>
+      </ARM-GCC>
+      <ARM-Global>
+        <property key="bin" value="false"/>
+        <property key="common-include-directories"
+                  value="..\src\config\sam_a5d29_cu;..\src\config;..\src;..\src\Embedded_Wizard\Application;..\src\Embedded_Wizard\PlatformPackage;..\src\Embedded_Wizard\TargetSpecific;..\src\Embedded_Wizard\Application\GeneratedCode;..\src\Embedded_Wizard\Application\Source;..\src\Embedded_Wizard\PlatformPackage\RGBA8888;..\src\Embedded_Wizard\PlatformPackage\RTE"/>
+        <property key="eep" value="false"/>
+        <property key="hex" value="true"/>
+        <property key="lss" value="false"/>
+        <property key="omit-pack-options" value="false"/>
+        <property key="processor-mode" value="-mthumb"/>
+        <property key="srec" value="false"/>
+        <property key="user-pack-include" value=""/>
+      </ARM-Global>
+      <ARM-LD>
+        <property key="additional-specs" value="--specs=nosys.specs"/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="fast-math" value="false"/>
+        <property key="flash-segment" value=""/>
+        <property key="generate-map-file" value="true"/>
+        <property key="input-libraries" value=""/>
+        <property key="no-default-libs" value="false"/>
+        <property key="no-shared-libraries" value="false"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="omit-symbol-information" value="false"/>
+        <property key="other-options" value=""/>
+        <property key="position-independent" value="false"/>
+        <property key="remove-unused-sections" value="true"/>
+        <property key="size-optimized-library" value="false"/>
+        <property key="sram-segment" value=""/>
+        <property key="unsafe-math" value="false"/>
+        <appendMe value="-lm -ggdb3 -mfloat-abi=hard -mfpu=neon-vfpv4 -lc -lgcc --specs=nano.specs"/>
+      </ARM-LD>
+      <Tool>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="communication.adaptivespeed" value="false"/>
+        <property key="communication.autoselectspeed" value="true"/>
+        <property key="communication.interface" value="4wire"/>
+        <property key="communication.speed" value="4"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
+        <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
+        <property key="jlink.override" value=""/>
+        <property key="lastid" value=""/>
+        <property key="loader.board_file" value="${ProjectDir}/board.xboard"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges.default}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="0x200000-0x23ffff"/>
+        <property key="programoptions.eraseb4program" value="false"/>
+        <property key="programoptions.preservebootflash" value="false"/>
+        <property key="programoptions.preserveprogrammemory" value="false"/>
+        <property key="programoptions.preserveprogramrange.ranges"
+                  value="0x200000-0x23ffff"/>
+        <property key="programoptions.resetafterprogram" value="true"/>
+        <property key="script.has_reset" value="true"/>
+        <property key="script.log_level" value="1"/>
+        <property key="script.reset_delay" value="0"/>
+        <property key="script.show_output" value="false"/>
+      </Tool>
+      <j32>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="communication.adaptivespeed" value="false"/>
+        <property key="communication.autoselectspeed" value="true"/>
+        <property key="communication.interface" value="4wire"/>
+        <property key="communication.speed" value="4"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
+        <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
+        <property key="jlink.override" value=""/>
+        <property key="lastid" value=""/>
+        <property key="loader.board_file" value="${ProjectDir}/board.xboard"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges.default}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="0x200000-0x23ffff"/>
+        <property key="programoptions.eraseb4program" value="false"/>
+        <property key="programoptions.preservebootflash" value="false"/>
+        <property key="programoptions.preserveprogrammemory" value="false"/>
+        <property key="programoptions.preserveprogramrange.ranges"
+                  value="0x200000-0x23ffff"/>
+        <property key="programoptions.resetafterprogram" value="true"/>
+        <property key="script.has_reset" value="true"/>
+        <property key="script.log_level" value="1"/>
+        <property key="script.reset_delay" value="0"/>
+        <property key="script.show_output" value="false"/>
+      </j32>
+    </conf>
+  </confs>
+</configurationDescriptor>

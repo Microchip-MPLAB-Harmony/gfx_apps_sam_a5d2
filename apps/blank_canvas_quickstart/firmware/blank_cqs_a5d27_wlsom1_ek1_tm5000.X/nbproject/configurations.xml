@@ -104,6 +104,7 @@
           <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/device.h</itemPath>
           <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/user.h</itemPath>
           <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/configuration.h</itemPath>
+          <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/sys_tasks.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f2" displayName="packs" projectFiles="true">
@@ -225,6 +226,7 @@
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/wdt.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/xdmac0.h</itemPath>
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/xdmac1.h</itemPath>
+            <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/instance/hsmc.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f3" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAMA5D27CLD2G_DFP/pio/sama5d27cld2g.h</itemPath>
@@ -246,6 +248,37 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/app.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <logicalFolder name="f1"
+                     displayName="lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc"
+                     projectFiles="true">
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/BSP_SAM_A5D27_WLSOM1_Kit1.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/cmsis.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/core.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/drv_i2c.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/gfx_canvas.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/gfx_disp_pdatm5000_800x480.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/gfx_hal_le.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/gfx_maxtouch_controller.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/HarmonyCore.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/lcdc.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/legato_gfx_pda_tm5000.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/le_gfx_lcdc.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/project.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/sys_input.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/sys_time.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/tc0.yml</itemPath>
+        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/twihs1.yml</itemPath>
+      </logicalFolder>
+      <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/harmony-manifest-success.yml</itemPath>
+      <itemPath>blank_cqs_a5d27_wlsom1_ek1_tm5000.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -347,38 +380,6 @@
       <itemPath>../src/app_gfx_assets.c</itemPath>
       <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/pin_configurations.csv</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
-      <logicalFolder name="f1"
-                     displayName="lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc"
-                     projectFiles="true">
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/BSP_SAM_A5D27_WLSOM1_Kit1.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/cmsis.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/core.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/dfp.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/drv_i2c.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/gfx_canvas.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/gfx_disp_pdatm5000_800x480.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/gfx_hal_le.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/gfx_maxtouch_controller.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/HarmonyCore.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/lcdc.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/legato_gfx_pda_tm5000.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/le_gfx_lcdc.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/project.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/settings.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/sys_input.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/sys_time.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/tc0.yml</itemPath>
-        <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga.mhc/twihs1.yml</itemPath>
-      </logicalFolder>
-      <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/pin_configurations.csv</itemPath>
-      <itemPath>../src/config/lcdc_rgba8888_mxt_a5d27_wlsom1_ek1_wvga/harmony-manifest-success.yml</itemPath>
-      <itemPath>blank_cqs_a5d27_wlsom1_ek1_tm5000.mc3</itemPath>
-    </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
@@ -391,14 +392,14 @@
         <targetDevice>ATSAMA5D27CLD2G</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>samice</platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.20</languageToolchainVersion>
+        <languageToolchainVersion>4.35</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.9.106"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="SAMA5D2_DFP" vendor="Microchip" version="1.10.213"/>
       </packs>
       <ScriptingSettings>
         <ScriptingSetting key="boot.load_adr" value=""/>
@@ -460,7 +461,7 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
-        <property key="appendMe" value=""/>
+        <property key="appendMe" value="-marm"/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
@@ -485,6 +486,7 @@
         <property key="use-cci" value="false"/>
         <property key="use-iar" value="false"/>
         <property key="use-indirect-calls" value="false"/>
+        <appendMe value="-marm"/>
       </C32>
       <C32-AR>
         <property key="additional-options-chop-files" value="false"/>
@@ -1129,11 +1131,15 @@
         <property key="codecoverage.enabled" value="Disable"/>
         <property key="codecoverage.enableoutputtofile" value="false"/>
         <property key="codecoverage.outputfile" value=""/>
+        <property key="communication.adaptivespeed" value="false"/>
         <property key="communication.autoselectspeed" value="true"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.speed" value="4"/>
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
+        <property key="event.recorder.debugger.behavior" value="Running"/>
+        <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
         <property key="jlink.override" value=""/>
         <property key="lastid" value=""/>
         <property key="loader.board_file" value="${ProjectDir}/board.xboard"/>
@@ -1167,6 +1173,8 @@
         <property key="programoptions.eraseb4program" value="false"/>
         <property key="programoptions.preservebootflash" value="false"/>
         <property key="programoptions.preserveprogrammemory" value="false"/>
+        <property key="programoptions.preserveprogrammemory.ranges"
+                  value="0x200000-0x23ffff"/>
         <property key="programoptions.preserveprogramrange.ranges"
                   value="0x200000-0x23ffff"/>
         <property key="programoptions.resetafterprogram" value="true"/>
@@ -1616,11 +1624,15 @@
       </Tool>
       <samice>
         <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="communication.adaptivespeed" value="false"/>
         <property key="communication.autoselectspeed" value="true"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.speed" value="4"/>
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
+        <property key="event.recorder.debugger.behavior" value="Running"/>
+        <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
         <property key="jlink.override" value=""/>
         <property key="lastid" value=""/>
         <property key="loader.board_file" value="${ProjectDir}/board.xboard"/>
@@ -1636,7 +1648,7 @@
         <property key="programoptions.eraseb4program" value="false"/>
         <property key="programoptions.preservebootflash" value="false"/>
         <property key="programoptions.preserveprogrammemory" value="false"/>
-        <property key="programoptions.preserveprogramrange.ranges"
+        <property key="programoptions.preserveprogrammemory.ranges"
                   value="0x200000-0x23ffff"/>
         <property key="programoptions.resetafterprogram" value="true"/>
         <property key="script.has_reset" value="true"/>

@@ -1,4 +1,4 @@
-<config configName="lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga" projectName="blank_cqs_a5d27_som1_ek1_tm5000" configVersion="1.1" device="ATSAMA5D27CD1G" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.4">
+<config configName="lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga" projectName="blank_cqs_a5d27_som1_ek1_tm5000" configVersion="1.1" device="ATSAMA5D27CD1G" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.8.0-2024_05_29_nightly">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -74,9 +74,7 @@
          <string>class com.microchip.mcc.harmony.HarmonyModule</string>
       </entry>
    </usedClasses>
-   <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.4"/>
-   </usedLibraries>
+   <usedLibraries class="java.util.ArrayList"/>
    <tokenMap class="java.util.TreeMap">
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_A5D27_SOM1_Kit1" name="#&amp;__MCC_Group_Parrent_id"/>
@@ -532,9 +530,14 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;
+&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;ComponentGraph dnOrder=&quot;0&quot; id=&quot;__ROOTVIEW&quot;&gt;
+    &lt;GraphSettings canvasHeight=&quot;592&quot; canvasWidth=&quot;900&quot; dnOrder=&quot;0&quot;/&gt;
+    &lt;PowerProfiles dnOrder=&quot;1&quot;&gt;
+      &lt;Profile dnOrder=&quot;0&quot; id=&quot;profile0&quot; name=&quot;Main&quot;/&gt;
+    &lt;/PowerProfiles&gt;
+    &lt;ComponentGraph dnOrder=&quot;2&quot; id=&quot;__ROOTVIEW&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;BSP_SAM_A5D27_SOM1_Kit1&quot; x=&quot;0&quot; y=&quot;10&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;HarmonyCore&quot; x=&quot;200&quot; y=&quot;10&quot;/&gt;
@@ -555,7 +558,6 @@
         &lt;ElementPosition dnOrder=&quot;16&quot; id=&quot;twihs1&quot; x=&quot;0&quot; y=&quot;110&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;GraphSettings canvasHeight=&quot;592&quot; canvasWidth=&quot;900&quot; dnOrder=&quot;1&quot;/&gt;
   &lt;/UserData&gt;
 &lt;/UserData&gt;
 </value>
@@ -3716,17 +3718,6 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SMC_CLOCK_FREQUENCY"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SMC_CLOCK_FREQUENCY&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;82000000&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SPI0_GENERIC_CLOCK_FREQUENCY"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;SPI0_GENERIC_CLOCK_FREQUENCY&quot;&gt;
@@ -6240,802 +6231,806 @@
 </value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.HashMap">
+   <generatedFileHashHistoryMap class="java.util.TreeMap">
       <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\driver\gfx_driver.c</file>
-         <hash>09c3af304672f8af0e2396e39d075b3666380044092f21647b30b1030d0f0655</hash>
+         <file>..\src\app.c</file>
+         <hash/>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\aes.h</file>
-         <hash>b0c2eedc8d3f7c2126d5c4005f17e94ced7ca0b640c2974235dcbe04a7f920eb</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\classd.h</file>
-         <hash>4e7548082fc49f96cb27bea050b4ea425dee3977c91dfc197719e61781e99ca0</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\lcdc\plib_lcdc.c</file>
-         <hash>b6bdc8782625b1a340bbde576705f07655aab0f5b454eb23b25605f1670db941</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core_A\Include\cmsis_iccarm.h</file>
-         <hash>aede1a5428f7b7f4de414f596a2b2b8b1e38a94b7f9762a094ea6d88a7ea5729</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\lcdc.h</file>
-         <hash>42c5795a8033d3f489271bd6392efaa05f8b607f171704c814aa4bf08b82b894</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\rstc.h</file>
-         <hash>fe7217f34dec5b88595898544fdef82fc0888dc66e6401cfe3e9afaf41384de3</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\lcdc\plib_lcdc.h</file>
-         <hash>2628b51ef887007cb4890b9a884a9b6afeae0aecd76ed4f52d49fd61442c0b9a</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\aesb.h</file>
-         <hash>e2a3c7182252058e57a5d388e9e09005db9723e01553b6d0c1ce5745ddefd5a4</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\tc.h</file>
-         <hash>7872c5dc325c435def5aa740c8d756cb34c4c68b95234fe176d7687699aa6beb</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\smc.h</file>
-         <hash>6ae7f62e1bdb78ed1535ae812687c7c5ac8243a52a91b5998524da873729c796</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\sdmmc1.h</file>
-         <hash>d84442361fc8a1f29313ea5900f0b64b5ca6ee6a390c75f997c601c5dee61413</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\flexcom2.h</file>
-         <hash>c53a69c8a1138e3fd82904990372ebd44bd8ed94edf957aeb535ae14f99cffcd</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\chipid.h</file>
-         <hash>12aee33913f33ed49a35cfb1f4b8c7a8f6fadd9a88ddbcad855e88b51e1235bc</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\tc1.h</file>
-         <hash>be4c5bf8aefc6d72ca41ea38296140692adba1f3e22c676bb7960bb1b4c2a2da</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\aximx.h</file>
-         <hash>7320c99fe202b10ea59a55f96c7612ad0efac5d1bf85095de3cf5881c41dc4f2</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input_gesture.h</file>
-         <hash>a026e77a5916d8d926300fcb78943a5ba209b77b237e53c693fc1d8e12a5956c</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\mmu\plib_mmu.h</file>
-         <hash>d776f8cb7caf3ccffada3d8624315c7f21ef457e4938ffb11611e3b7b048c4d7</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\pio.h</file>
-         <hash>ab13397968203b8f29472f37d347015aac7ce44e07661ca3ee47836eb42df2c9</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input_listener.h</file>
-         <hash>f04968d49fb1d3dd10316b6f2873bc2d9d114097b5715da00c2c33edfa43bd25</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\mmu\plib_mmu.c</file>
-         <hash>dd407e9b3c4d37c14dcc36bd13f4ad63c9da2c815eae80c288fda8f6b0144bf4</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input_listener.c</file>
-         <hash>e895e9e0b5203852b017163066829cdb1b169c8acbf8c8bc00149cacf930b24b</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\isc.h</file>
-         <hash>1ebd94c0ef1f2490e1749d857f9aab5e067b655ffecdc9ab539d41aa0ed05794</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\mpddrc.h</file>
-         <hash>f3ba5db611df4a5fbbe0f34132e9a7f1fde72e7fcd53358ca931e3b18de9bf34</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\pit.h</file>
-         <hash>fe2e974329f7186a0811a66228ecf12cdaeb6cef9fc0a902ca1d8248143f46fb</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\driver\gfx_driver.h</file>
-         <hash>fe9fcaab15196bb9b101e51cddc6418c9004f6babc2d416d8d5400ed7e554308</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\system_module.h</file>
-         <hash>981fac23277aa77f682e7a9a28d436f892006cd5b4c7f23f50941b6d9a30e740</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\osal\osal_impl_basic.h</file>
-         <hash>0c388837ef1d4e207a028ed31bfe07f1aac7ea8b0505caff58f737667ccbeaee</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\matrix1.h</file>
-         <hash>7818b6d76a9d90bd064a055265093eb654076c2331f5c1024ad1baf2c505baf9</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\canvas\gfx_canvas.c</file>
-         <hash>cf084df738f1fad2797106bb118189ed4e1c723adc42cdfeaa981cb449d0f318</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\gmac.h</file>
-         <hash>2da4de8920eb285ca95b7646c2f0697ca31b9b81d25ff4ec3471cfd44a7ced11</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\acc.h</file>
-         <hash>b3176d604b0f5143a9bc71f3b91fe8fe99ae59f0d51e769797acadc27b93bf8f</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\trng.h</file>
-         <hash>07c5788eeb83f9b55214063f37c3c46b2b60743e3fc92e9a40c4abf8a9150700</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\uart.h</file>
-         <hash>66cc1391771ffcfe8ecd5b06db1d308526da89c9587451b375a05a02f95b8751</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\pmc.h</file>
-         <hash>c5a8557b78207709acdcb4700b01f57604761b511cfb10b250a947c41f868cd3</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\icm.h</file>
-         <hash>7af708cf7782093e33ad2fc0617a7355cc74cc12be4ba6bf331314e00186ef70</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\matrix.h</file>
-         <hash>c4f7c9bd54ce749c9a98b7b0762b3c57be1519bb0f0d8943a61ee44fbe16e3ce</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\system_common.h</file>
-         <hash>0dbf2f60b29c97426e70187bc59c652ab5a355f51cfbe3f195ff1c8c6c0b1602</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\interrupts.c</file>
-         <hash>6755933ccf97390aac25e7167618dc82e5e9f16ddf91231f802c6f641b26811d</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\osal\osal_definitions.h</file>
-         <hash>0a5ca28c4812bb37babfebc1fe30a90b13583504d81910ad159feb746a5b002c</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\tc0.h</file>
-         <hash>06fd3499ad9b24e2b0002933cd866f64499e8c150fe77d6ae67673e8c59d70c7</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\flexcom1.h</file>
-         <hash>832b9f573e89b3cc7faeb1bed36554167c121d5c7e0257aee6e73435e96d6807</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\rtc.h</file>
-         <hash>bf9908c5811c70b54aaec4b4cbc801dfd8d90188e9507e735c595397a6de9b0f</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\aic\plib_aic.c</file>
-         <hash>52493e0b46883c3bc1d20dba10bd8d16e62e0ff4ae92cacba28aa0f252a43c7f</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\sfrbu.h</file>
-         <hash>fe8c56f4e4b9c12a65d3bb4a2c6e68cfeb995b90da719f3d5a71b474d6c4f9c3</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\aic\plib_aic.h</file>
-         <hash>3744d8f5ae1843ce5b3b78bbae13a22a7f22b2f0584db476b657b40cb7850809</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input_touch.h</file>
-         <hash>30c260c8307aa49fefd8439f358699c49ea82740c0cc1600badd6f1b4f208922</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\classd.h</file>
-         <hash>bc6918a3a7fc9ef28319d27f107b5de77975fcd75fd7134c2e42058b08101256</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\matrix0.h</file>
-         <hash>d840ff8d5ab1dd85fec4e0ab75f6d1c91959cd29fdf4850c517504871be41e54</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\int\src\sys_int.c</file>
-         <hash>e4163a61c6bd968273e7b7a92df0991d68a1e72b919ccf5a4dfe4d8b26d01d6f</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\time\src\sys_time.c</file>
-         <hash>b722ac0c5d955d289bd906609ab6f302342166c5ba66f87b30cac17ac6bfdcd9</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\canvas\gfx_canvas.h</file>
-         <hash>0d93c68ab436d8e895fd3159b8f6de681b4a9843958ff13f8454eae077cfa540</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input_mouse.h</file>
-         <hash>ce426165dc4e417411565103a453c069415139ceec3ce8c86e96cb500dfea1b7</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\sfrbu.h</file>
-         <hash>3c4013a3c6e7b03344ce04d60464fe2173e4f4eed4248e857f0162bcffe766c7</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\lcdc.h</file>
-         <hash>08761f8c80b0701ffb7bd1d77c8e4cb898aecc16477ba15c434cc534714621e2</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\udphs.h</file>
-         <hash>a258a5d78e38c775743cdfdb5db51d0aa367f3c3be6cd5fb73e57bd7e9c06caf</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\toolchain_specifics.h</file>
-         <hash>2559d185e92918f61c308a62200cb0cda72726c63111561524dd53afcc635a18</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\shdwc.h</file>
-         <hash>421c9acc3db5319039a4aecff11846513b995e4c4d56151f1d39e11decfc0763</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\interrupts.h</file>
-         <hash>91abdb8d191ae865fc6082f30783c3d6cca8aa8d5aca823a7fb2cc65e3a57d24</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\configuration.h</file>
-         <hash>2e08be560825e74dda37a35a41b853851b651dd88180139c8b525d5c66666d0e</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\flexcom0.h</file>
-         <hash>b1f5685f449ecf82ceed1ebcde1091c983daa356c56cca7cfac3c04dfc3c4bda</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\canvas\gfx_canvas_api.c</file>
-         <hash>adf0da4dd5db3d777043ee54adc11746a7b9f7990a4e5b9153b3aada30b71114</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\pdmic.h</file>
-         <hash>a5cb85def91565f0df986258217a34e8c6bcd67e0fb583bc8d8bd76efc2e9215</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\icm.h</file>
-         <hash>acc9efd8c7f5b6c6eaa02524f2e25d698b7d490b94b2672d7346352a0657ecaf</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\aic.h</file>
-         <hash>596e646775b0bdc6ee9138cf61399c80675cfcce36ff23b995f177116454586f</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\canvas\gfx_canvas_api.h</file>
-         <hash>0e743daeb0a4a55191bebc5dc40ab3e9b1d9f1d82611ced09b45e5daa84bb89d</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\driver\i2c\drv_i2c.h</file>
-         <hash>1add02b0380f67be5dc9707f01b290af08eccc0957775327f44a8c1afc823410</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\twihs\master\plib_twihs1_master.h</file>
-         <hash>88bc8cbd403e416e1b05e1647e17d8ad2bf44ddc303b0d4a4cffcc15d05da3c5</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\matrix\plib_matrix.h</file>
-         <hash>a1b6f545c90323c2ad24a5e2ae7a286659fd533bf3100ca2831624ad776f87a5</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\wdt.h</file>
-         <hash>6c13f08e0c3845c91456c7322dbf78d52a5f5606c757647c9ade83e0d83f5688</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\i2sc0.h</file>
-         <hash>4e79c5810e8229a413ad8be3398c33f5804f5aaeb1a865e2faa9520dad7f1a19</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\twihs\master\plib_twihs1_master.c</file>
-         <hash>c545c17adc278185ebddb98ebefa98213fe6c48370f6ff42201b97e55a7177e0</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\sfr.h</file>
-         <hash>83a49cda18cf7fad8e99cae75f74bc703d4d0bcdb680be1a8935fb78e762ab57</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\i2sc.h</file>
-         <hash>36ba9ce05a3da57814149ec3add76d23d4d2cc6e7eff4c1adef3fb5ec07a117f</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\uart0.h</file>
-         <hash>615b41fa0c194ccce6d7b19a2f3c8514a55600e02668071e78db9253883afccd</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\twihs1.h</file>
-         <hash>3453200ffbf6fd40f26297168810f52b5d4bab8568332b84304e4048a347c0f6</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\driver\driver_common.h</file>
-         <hash>5217965f6720b4fdf717e99ce9df4f2c9fbd82bbbc9655847166d1eefa806fee</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\cstartup.S</file>
-         <hash>103e93360e0ff823d8be3beac4d1c5a53e87b0ae94fde47cd91b4073b18a6177</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core_A\Include\core_ca.h</file>
-         <hash>ba65df987ecd6e3692f49eda2a6be74d4e1f0a9a3595e7c15c9812c360591f85</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\tc\plib_tc0.h</file>
-         <hash>79afe8007b0060db79e911ca3574ac588005761cabfd42c574d779bb71615a7d</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\sdmmc0.h</file>
-         <hash>ce466a7ea257497628b61d04cb56962ecbc3abe4e0392bafcab62f2545f0ebf1</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core_A\Include\cmsis_cp15.h</file>
-         <hash>5d0183058de6b2245dc949f13bb736cd1e8fe154fa76b643f9fb8947c1b3ee04</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\matrix\plib_matrix.c</file>
-         <hash>99eea2e3383b645778085769947e880fb23485d6312cec3e8e20d296bf36a70f</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\tc\plib_tc0.c</file>
-         <hash>15a3f0c76d87e47ac78f78b93e903c72d1e3d71184b9da21c45752b1acc2a50e</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\qspi1.h</file>
-         <hash>4e1964ee63027a15465291ba6091fb12918328072923809b46dda2df53d33191</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\chipid.h</file>
-         <hash>3c020ee94af962befdeb2f18dda6967611b131c8dd17c11c73751d028ea53880</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\mpddrc.h</file>
-         <hash>d426daf409c9fc3deefc24a30d58f7737cc7d47f81b3f2eae07d1fbabc835bba</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\sha.h</file>
-         <hash>c2c77d6ed4d4d65f5c0f0a25c1e470bca0d20db395b4308e01259465b962984c</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\rxlp.h</file>
-         <hash>9ed053adda87a23096fb5bac7e755ed9bcb517e8fa6a7a2da87a99645680b3fa</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\qspi0.h</file>
-         <hash>f5424aefdd2752c65dcceff8ccbe8b9c1e4adfe0a4870de1d9fed8677c20820e</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\pwm.h</file>
-         <hash>6e4da004b72740ccfc456bc96633948818510dd70650e826f8704f4a335c79fb</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\cache\sys_cache.c</file>
-         <hash>96e3cf05b3e24641f89f3726e0f900a28002ae53ccebb23c8cf27563c59d3076</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\cache\sys_cache.h</file>
-         <hash>3407ecac4da455d4b8ba70043f10c20b10e1304e92402db824ca5efa6a2f8402</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\isc.h</file>
-         <hash>85fccc1500bf187db37c1b275cdc85d8a77437611dee59a0288d3f9e28aa71f9</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\adc.h</file>
-         <hash>b390c2e741b4b21c5feaed32d66faecc6aeecea50db1efc4f9831f5ed8871cb2</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\ptc.h</file>
-         <hash>37b96eac72a01f5a8d24cba9aefbbdebd01e3b6fb1520f4e6ddc0f59cb388a5f</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\driver\driver.h</file>
-         <hash>042fdd289460dbddb8e805850af7e3ac9aea95468e37414959781ebc5b2f454d</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\debug\sys_debug.h</file>
-         <hash>222cdc284bd651e83188b9641cc57c133cf86563dbeb5d5523766d4a36087165</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\time\src\sys_time_local.h</file>
-         <hash>d3ef06b59d9a89efe9e8eb54fcf3b75120d56156cc21f6847ca4f9e902eb7c9d</hash>
+         <file>..\src\app.h</file>
+         <hash/>
       </entry>
       <entry>
          <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\bsp\bsp.c</file>
          <hash>01c58e967b09b30368ece36ae4874a48c69738d6fa6301ea59fd33a3e817b157</hash>
       </entry>
       <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\osal\osal.h</file>
-         <hash>d42702188d00d3e1d7219d7eef030485896bf8b5ebe55318656e82f0fbb89788</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\bsp\bsp.h</file>
+         <hash>e0fc4f9699fcb9d8fa6b6c0e76fb2d19cf3af0f188e607736aad7f6d16180f5a</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\secumod.h</file>
-         <hash>14b1141ce2be4c5739058c66d0d91121c6c68199c8b682a40170ca62b20c7e27</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\configuration.h</file>
+         <hash>bfe1a20e12373f0851dff6c8e78e3090e71b7c64d52d3f1d249da66878225664</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\i2sc1.h</file>
-         <hash>b9ec5db8768abb41b389ef7ba7233c94b150d94bad42b846be57155e1388576b</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\uart1.h</file>
-         <hash>0e8dad4b9c1883bb6b43cf9251e557abb07e4739dc1589d1dc69a3ec2181f332</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\mcan.h</file>
-         <hash>4aa92ab9c711b420a258afc5e2251a12cd8f735ee05c478d7e4b58645e045fed</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\twihs0.h</file>
-         <hash>60cf94d1e42c2e6b582ac7f40a41af1a791dc2fe9f35fbda5837ebc890a87187</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\smc.h</file>
-         <hash>fb5c0752a8b4c377d732aa6051447c0fa92231767c03d24290416618d14e8d94</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\definitions.h</file>
-         <hash>7062ca657250a799d757b65f419f199385c677936086fd8982a17fce3bcf46a6</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\aes.h</file>
-         <hash>11c9692072fb7ef4efd8bec81d24d4993671df27de5146102bce5c20be73925a</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\user.h</file>
-         <hash>451e0878e9fcf6cf9fab046c1452ea662757988346c7f39e6bc98478ca25f995</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\int\sys_int_mapping.h</file>
-         <hash>a88ed061ebd75cff98fc9703d2dbd3c868a729737c0d00afff3e0755ab4f8910</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\clk\plib_clk.h</file>
-         <hash>36d308eef8040cabd4f33934b8eff382fd8575cb131e5f7926b514bb076e3214</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\driver\i2c\src\drv_i2c.c</file>
-         <hash>d27c94dc19b7413b120ca9aca2689f5d95e5a2c46f2b3918d37587bf64c85551</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\tdes.h</file>
-         <hash>1a39f1dc7020a2b82fc4fb8147e1835c0ea3b053e92a599645754b9971f13560</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\system.h</file>
-         <hash>2b75f8e370e5cb2c54f70da7351ee149f0d5a7673e700f39b373099716b31b55</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\rxlp.h</file>
-         <hash>75eda40bab7bb44f785cde20d8cacf65ea89a108892491ad4226e13c67366cce</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\pwm.h</file>
-         <hash>9124d397613e015c90328beae83ca08ebf6171639978eac738e5a0a0fab74d4f</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\int\sys_int.h</file>
-         <hash>71e36331ee689ae305b3d8ec49948e3dde0324b65f51bf38f4472b900a421ed6</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\spi0.h</file>
-         <hash>9343db713372cd6a492abf0c301e611a0f66d4a48963c0b60999f018517b6f7e</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\ssc0.h</file>
-         <hash>89975f4c00c326e990e0c9bf89ef74ccb528c2019a32dd3872732b7e09b6ab35</hash>
-      </entry>
-      <entry>
-         <file>..\src\app.h</file>
-         <hash>8e35d8509552a4d1d6e6f123ad75694cf784a707f7dac592ed33b55121aa8e28</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\cstartup.S</file>
+         <hash>0fef03fbac79d1e5989a6f0e8cc4232145174f8f87b3212dc04be5f736229596</hash>
       </entry>
       <entry>
          <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\ddr.ld</file>
          <hash>cc2f9e447c87c9e178c19420cc11fe2fd7612c34fd87e02b317266c3158a0154</hash>
       </entry>
       <entry>
-         <file>..\src\app.c</file>
-         <hash>632c78c323cb9f8c6359f20337440c08f8461eb4b0304552b6a3cfd5c4052620</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\driver\i2c\src\drv_i2c_local.h</file>
-         <hash>f82fd4270a023c7d3281752352a98a33d139a03992f8cf32e6ad04adaf8fcf5f</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\clk\plib_clk.c</file>
-         <hash>b7558f6a86847ceb6e64704d77a1ae8d5b656f0ecbc9b238f334314d43f6363b</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\stdio\xc32_monitor.c</file>
-         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\gmac.h</file>
-         <hash>a8a2ac67d6ecc143027df16914c3a265884be746824ee04727a9f4ea07277767</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\fault_handlers.c</file>
-         <hash>34134ba54c0becfbe75cd670be15133f2a10dea081d9fa5fab75f17afc1109ba</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\pdmic.h</file>
-         <hash>00303ce53a4981c82947ba80e2d5509f5e581afda0ec29e13c8b49394c861237</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\trng.h</file>
-         <hash>25b5b19c7e2f71dc8f4dd57fc1a538d6bbd0e0c2dfc923bcbb0b7c0f203781d8</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\uart2.h</file>
-         <hash>f68d376716a561ae5a6d7187871041b4263fe937667cd7749d43171fdd4c0935</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\ptc.h</file>
-         <hash>e9b554a868722e43e0460d08bf4f8593a383da70e463b16d5b0910c2fbd59125</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\ssc.h</file>
-         <hash>402ef6182651a93f159504cc2bcb00d2aae1fc2583e93d8423de4a727f4ce7f0</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core_A\Include\cmsis_gcc.h</file>
-         <hash>a720d18d2dd2921d8fe308d21c1f2e9c8174549ec1a34447927db3dcc9505aa9</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\acc.h</file>
-         <hash>f2d394a413aff6be42eb4e671671a287bc611d5d3871de2157a11281c4e468c9</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\initialization.c</file>
-         <hash>b5a523835ba6e2a59c780b8ae5ac9c490bb03cbbfb1ac19ddc6e175a59903583</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\definitions.h</file>
+         <hash>737fc20257d2e6c2bbdfe02a69d44d2ac8e45a1e5073a914a2c257581de8ffe8</hash>
       </entry>
       <entry>
          <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\device.h</file>
          <hash>11a8f8b0117a756dce1391269f23ce00912796fbb892fbf77ea4060535dc6d8c</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\sdmmc.h</file>
-         <hash>069f37f61c3324daf055d06d24538e937e1d34f299ffba3ca910ca847d4693fb</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\device_cache.h</file>
+         <hash>5338f76cd38109b0f8a1616b1fce69a0320d5e4c309c4be012775790af9f158c</hash>
       </entry>
       <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\pin_configurations.csv</file>
-         <hash>458a052fc71ab683588bda606fad078069849b0aef3b82ab174abaa44312ea90</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\driver\driver.h</file>
+         <hash>042fdd289460dbddb8e805850af7e3ac9aea95468e37414959781ebc5b2f454d</hash>
       </entry>
       <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core_A\Include\cmsis_compiler.h</file>
-         <hash>5f314774edbd044865df8c2c2c98242bfa8ee8e671559b110d1e139776f45b7f</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\driver\driver_common.h</file>
+         <hash>5217965f6720b4fdf717e99ce9df4f2c9fbd82bbbc9655847166d1eefa806fee</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\flexcom.h</file>
-         <hash>3af23b9aa7dde49ec2db3554470d09412b54c4330d9eae0f8d0925e41613023e</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\driver\i2c\drv_i2c.h</file>
+         <hash>098d38bbc9c9d42befb9e601cfaf7f342ce8c670b788c961ef84df6db1ecbf82</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\tdes.h</file>
-         <hash>78bf2746ff897b1d0ffd61809ef1f80cb581d9520efeca5df90d0b33f4f93f79</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\driver\i2c\drv_i2c_definitions.h</file>
+         <hash>308393d7dc25f042ea7443ac00d81cc8fafb0eec952207d88f64a0b48ea04bae</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\spi1.h</file>
-         <hash>8cc5f75db360eec77ea726c258c4c99397c629f684ec23330e5e80d3a9a13d8b</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\driver\i2c\src\drv_i2c.c</file>
+         <hash>5d5aba18ec8e697a064a2eb4b862f0bb5ae34e68d88e71de23b5b1a9019e90c4</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\rstc.h</file>
-         <hash>6bf32548c6a789e2aebd61bb8e41a919645ca5963c3381c712117686c1c8c69f</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\sfc.h</file>
-         <hash>5cf375533479ff2debf2dba20edde0404fa125bb5490c8aa399dc3df4ccf8530</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\pio\sama5d27cd1g.h</file>
-         <hash>6620684ce550ea3ae92b3cfe43ea0ae9912725acf6416ee57b298114526fdfb7</hash>
-      </entry>
-      <entry>
-         <file>..\src\main.c</file>
-         <hash>d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\sckc.h</file>
-         <hash>7e28aa0f5882c39e28fa102c2e8861d92c56c5e3e4605f99855cd7623871fbbb</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\mcan1.h</file>
-         <hash>b5e2bfcd98aaaf29a69254e1221c380cd7039c67045aea2ad072e110776ec869</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\aic.h</file>
-         <hash>79338722d6232eedc34a31d928bac7ac6a38662f68edc304414d9741f1af6125</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input_keyboard.h</file>
-         <hash>455652a3a73a63c2ac5c792dea5c0979e9634eecd189ce6166cd77454aa3a505</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\time\sys_time_definitions.h</file>
-         <hash>904195d4340ba6b97cf19c25b9695d2a9f37ed67cf6abdf8ee1ee839506e2801</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\driver\i2c\src\drv_i2c_local.h</file>
+         <hash>efe3b598a6fc3492f7f448c0077edcce4378d2029b5a26d304e0293e0d4711f7</hash>
       </entry>
       <entry>
          <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\driver\input\drv_maxtouch.c</file>
          <hash>a64fc76b80833ab5617504d1383c7b6c8acec2ef26a4653d88e70be4cdfda950</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\xdmac1.h</file>
-         <hash>0c4b03b832bfe6c88e95254ab4c63438e06270c53cd27652212b4018a90769a7</hash>
-      </entry>
-      <entry>
          <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\driver\input\drv_maxtouch.h</file>
          <hash>1e73c3f12a1ddbc54387bf11646f6e30fef57f708a6a36e7277aa95f00861e6c</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\uart3.h</file>
-         <hash>6845bd8a533d9fad94dfc3f33582246f0ce63df094c0c3228be5f2a0c4d8fc75</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\fault_handlers.c</file>
+         <hash>931e951cf7431d3d70d6ab81bcd265ff0ac8b3f473b73cd7a541f59d49786b7c</hash>
       </entry>
       <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input.h</file>
-         <hash>98a0e46574aafb027a51f9b1b1e6589134714fdd2e3386db4a423c1f41001989</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\canvas\gfx_canvas.c</file>
+         <hash>d19d4b1c41c73b3f898ccc29655112adbbc06d9922f87f087084562ed0c5f2c3</hash>
       </entry>
       <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input.c</file>
-         <hash>e40e4ffe1dae0584eda92df7a87e3df4e9ae0e831db34bb76ac8493a70800eac</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\canvas\gfx_canvas.h</file>
+         <hash>0d93c68ab436d8e895fd3159b8f6de681b4a9843958ff13f8454eae077cfa540</hash>
       </entry>
       <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\time\sys_time.h</file>
-         <hash>f21b100d8f0b8b79af9217315098d51df855d9015f05a7e25ad77414cd19b2c3</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\canvas\gfx_canvas_api.c</file>
+         <hash>adf0da4dd5db3d777043ee54adc11746a7b9f7990a4e5b9153b3aada30b71114</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\flexcom4.h</file>
-         <hash>2738c039c7670cac6c43313c33e8439e92616d9a58e5a6125224d59b2b1b5ceb</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\canvas\gfx_canvas_api.h</file>
+         <hash>0e743daeb0a4a55191bebc5dc40ab3e9b1d9f1d82611ced09b45e5daa84bb89d</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\pmc.h</file>
-         <hash>f2b7ecf9fc540f80b7ea62b51091248d6dd332d83a4bf7c38c05e2011768da3f</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\sfc.h</file>
-         <hash>f7a976b6b1e179fef08645844c50f7800bf2e4a726d73e6121fbc4880ce1a8a8</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\tasks.c</file>
-         <hash>7c74d9606ef84754b337c89471adb040a7a2471524a646d627b5ccfc9f5eb304</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\adc.h</file>
-         <hash>ea81da82b661defd51419640575b73b83c454519c81c5d99e673c3444d8297d2</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\l2cc.h</file>
-         <hash>b57f4cea2f2b981b232c3091ea61505fa7809849c117aee47bbcbb34dc4bb774</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\twihs\master\plib_twihs_master_common.h</file>
-         <hash>acad5aed5a4a6eafa661328807006fe847e99857bc01378cd58003c0389aacf9</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\wdt.h</file>
-         <hash>486a4720d101eea17d1ae618d30b4a8c95e69ad8e2be1470a01633404bcc5c04</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\mcan0.h</file>
-         <hash>b1654dd05e811e50c64b668f36127847838172f503c68c79424bd3f8b5d537cc</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\sha.h</file>
-         <hash>febe8b49baa7358bde908e7d333348507d8ae5712a33cd09656b773e90c9b117</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\secumod.h</file>
-         <hash>4ed9728936541614a6ff2cb45e29ae456f732c01f1e0729d5d96c94e08915469</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\sckc.h</file>
-         <hash>400d5853a4b7c226ef487333a898a0bcf7cde08753c72292eeae085d643757e3</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\shdwc.h</file>
-         <hash>42216a32241ce9237b110eff3ecb84a0f39946b1f4fe69be55baf203082b26f1</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\aximx.h</file>
-         <hash>015fb39b5c727df14bd7da15b105c346a3c204ae7b155070f39681d72e60aa0a</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\xdmac0.h</file>
-         <hash>b34e1ba5e6cf07ac1925d2a255b892b3124df9f873aa8522d56a9a6495eab6d0</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\udphs.h</file>
-         <hash>bf73546c32371e2fde480932d6e68adc1b1c25c30ebd3e826063be9cf6c7b9b0</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\device_cache.h</file>
-         <hash>5338f76cd38109b0f8a1616b1fce69a0320d5e4c309c4be012775790af9f158c</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\uart4.h</file>
-         <hash>7b255a76bd82b502e47f93c0fd3e9548139c6d3c9e8754a0450089dc7512548d</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\rtc.h</file>
-         <hash>d2e331f6d864774358cf3511adad386acdf39b990bb3767e14fc1ec0a5d1cc18</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\sfr.h</file>
-         <hash>b960392970cbf81ea444b97c33822a7a4d47306c9835544c7dbc4768319e6bc5</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\driver\controller\lcdc\drv_gfx_lcdc.c</file>
+         <hash>a7895ea39ad22a1a88ac88461f4812c9d3c01d69c2de9122643fb473ee963490</hash>
       </entry>
       <entry>
          <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\driver\controller\lcdc\drv_gfx_lcdc.h</file>
          <hash>81910929785573ed4adcc3fadcc001ddf6fd9f3f95c76332649b4ca550002d04</hash>
       </entry>
       <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\tc\plib_tc_common.h</file>
-         <hash>18de4e464f8009ae88ff57f51eade38db795cae08b4a09570ef487e4e980d086</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\driver\gfx_driver.c</file>
+         <hash>09c3af304672f8af0e2396e39d075b3666380044092f21647b30b1030d0f0655</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\qspi.h</file>
-         <hash>62df4a0cea7ecdc96146587aa0465e9b1d70d526f2e341587dbc166e98dcc619</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\driver\gfx_driver.h</file>
+         <hash>99c4a55ae198e618fd3590a98f219c38882bde956dc022215ef66df01b108936</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\uhphs.h</file>
-         <hash>8d6822475ccdc74cbc4e0980cf641386a635ca2ead296bba4cade4c21b6173fd</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\initialization.c</file>
+         <hash>cef1e59e8c42c93ee280bb112c01ae0ead523b2e8c929ad0979e0b13dc669c16</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\saic.h</file>
-         <hash>3f6cceee0553fbb149db18a97e4b9d25fbc4c62c44e909fae32bcfdc80bf5053</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\interrupts.c</file>
+         <hash>6c897205519661daeb3f03fbade1997db33fdc6e32a2a569b7a7c6da150bff23</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\sama5d27cd1g.h</file>
-         <hash>b7cccf82fcd1cc36277c06a54b8f774c23e64feaddfe3da39c7dde8f581e6587</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\interrupts.h</file>
+         <hash>6e746c66a9e3ab48a97a672880f2ed88070ced33979e3803fc02984bbf273381</hash>
       </entry>
       <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\gfx\driver\controller\lcdc\drv_gfx_lcdc.c</file>
-         <hash>5770140279a55468cba8d0f94d4973100efaa8dff50e853f7d6f2fb896a737e1</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\osal\osal.h</file>
+         <hash>8404fbe44807fa0484ffb38843a72cb9af8e31c9c30bd1b2594e609b8ea317d9</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\xdmac.h</file>
-         <hash>9d0aec1179e2305150c08e4d39923c84603cbd32c00e4d52c67b7267f65387b7</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\osal\osal_definitions.h</file>
+         <hash>5f0a2513a093b6d228e2b50646b204923a82047335a47f3d35a2938309ab6f37</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\flexcom3.h</file>
-         <hash>2191964a8eed02f013bea95175afd6031bfebbeac8112c6e4ce8b3f4e0604961</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\osal\osal_impl_basic.h</file>
+         <hash>67ce72d34fd1e4dee0b6937fa026ab2c7bd285f82a24da09742c68333adaf0fc</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\spi.h</file>
-         <hash>7dc83695d45d168c858202096bf28b8096cd631c5fd67dbd2827fdd119dedeb3</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\aic\plib_aic.c</file>
+         <hash>1df25ab01a87e2c76dc9bd3b8454b14c1171b45fbf368fb325098f50508ccc06</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\aic\plib_aic.h</file>
+         <hash>9ff729f3819887a6769c1a4386db9727e6e88fe6bee25960985d9ccd09229a7d</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\clk\plib_clk.c</file>
+         <hash>f74c8d01381368e4b0b7aa1a4c8158d6364979af686f4b24ac276c384ee746b9</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\clk\plib_clk.h</file>
+         <hash>36d308eef8040cabd4f33934b8eff382fd8575cb131e5f7926b514bb076e3214</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\lcdc\plib_lcdc.c</file>
+         <hash>abea7c9fd3f447d9fdcd0428c216dcd639beee368ae45ac2a07b08ee35783cfe</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\lcdc\plib_lcdc.h</file>
+         <hash>6b55d7fa9cecdaabe9f8e7d03e099e5ad3ff96931f696f8202af2962b200d428</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\matrix\plib_matrix.c</file>
+         <hash>99eea2e3383b645778085769947e880fb23485d6312cec3e8e20d296bf36a70f</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\matrix\plib_matrix.h</file>
+         <hash>a1b6f545c90323c2ad24a5e2ae7a286659fd533bf3100ca2831624ad776f87a5</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\mmu\plib_mmu.c</file>
+         <hash>a30a24e2bd003097f892e484eeaf699e350c4b4c33b0a243b65f7321851ff27e</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\mmu\plib_mmu.h</file>
+         <hash>6cd47e9a81702a54bbf922b56e09b165a481d61df9298be2e81611521c6c134c</hash>
       </entry>
       <entry>
          <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\pio\plib_pio.c</file>
          <hash>d81f31e3f18d1d742470d4144012181288694a11b152b2b64a9193ce7c66ade9</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\l2cc.h</file>
-         <hash>be65a41273d55bc8c01a43efab0ec68965b1c3357dcc4443df9811a1fd13cd37</hash>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\pio\plib_pio.h</file>
+         <hash>2fe265d36626cbf405225d4a8f84ec589fa5379fadd0307b08c29d0e94925417</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\tc\plib_tc0.c</file>
+         <hash>96ea56e9cea7ba7edfd3c0c496a63eadcd4b133767d04edd8b2885804a40041b</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\tc\plib_tc0.h</file>
+         <hash>79afe8007b0060db79e911ca3574ac588005761cabfd42c574d779bb71615a7d</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\tc\plib_tc_common.h</file>
+         <hash>920c335908d58caf6b00d824870cc7c8b80011a09c27e6ff7b56f6fc237ee5c5</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\twihs\master\plib_twihs1_master.c</file>
+         <hash>61e2b08dc218b02acc7a2541d3a4faf577815c2aef5b866e034699db2216a701</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\twihs\master\plib_twihs1_master.h</file>
+         <hash>88bc8cbd403e416e1b05e1647e17d8ad2bf44ddc303b0d4a4cffcc15d05da3c5</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\twihs\master\plib_twihs_master_common.h</file>
+         <hash>64d149b81c2de18e7a7fb94212d965bccb3b865d8b59acb548dbbff3306f554d</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\pin_configurations.csv</file>
+         <hash>458a052fc71ab683588bda606fad078069849b0aef3b82ab174abaa44312ea90</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\stdio\xc32_monitor.c</file>
+         <hash>858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\sys_tasks.h</file>
+         <hash>21f254f497a18a024cd00128d06c4776c2643f867a460c1ba9880a7dd41a8d56</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\cache\sys_cache.c</file>
+         <hash>f3e1b1a0784033dbb86eb289c81c3347398c08f65b18d09be0cfbf7d3a8f9bb6</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\cache\sys_cache.h</file>
+         <hash>b4b3a4e7434759c9bbcd3c6a0ab97558eb2a007f083a4eb76dbedcb2e2c3d86b</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\debug\sys_debug.h</file>
+         <hash>4162d9e1fab93b8b33f6c8a24726f5dc287ea05c31e3ab984c3c920c725d0882</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input.c</file>
+         <hash>ebae84fd66e137b1803f597267fa5e03b22aba212d276c5b72b04da298f801d7</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input.h</file>
+         <hash>98a0e46574aafb027a51f9b1b1e6589134714fdd2e3386db4a423c1f41001989</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input_gesture.h</file>
+         <hash>a026e77a5916d8d926300fcb78943a5ba209b77b237e53c693fc1d8e12a5956c</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input_keyboard.h</file>
+         <hash>455652a3a73a63c2ac5c792dea5c0979e9634eecd189ce6166cd77454aa3a505</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input_listener.c</file>
+         <hash>e895e9e0b5203852b017163066829cdb1b169c8acbf8c8bc00149cacf930b24b</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input_listener.h</file>
+         <hash>f04968d49fb1d3dd10316b6f2873bc2d9d114097b5715da00c2c33edfa43bd25</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input_mouse.h</file>
+         <hash>ce426165dc4e417411565103a453c069415139ceec3ce8c86e96cb500dfea1b7</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\input\sys_input_touch.h</file>
+         <hash>30c260c8307aa49fefd8439f358699c49ea82740c0cc1600badd6f1b4f208922</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\int\src\sys_int.c</file>
+         <hash>5a683ab50cabf3aa131d76d12f4715e103de0e5cce67d22ab26d11665c38614f</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\int\sys_int.h</file>
+         <hash>dc104ae181fd5309e1bb42896246644fae95915a8e639b23ecfccc8840850274</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\int\sys_int_mapping.h</file>
+         <hash>652a7ea6c065e3a4cbcbfaef7c3519fca207fa36de25351875c3ba746dff242b</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\system.h</file>
+         <hash>2b75f8e370e5cb2c54f70da7351ee149f0d5a7673e700f39b373099716b31b55</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\system_common.h</file>
+         <hash>c9f34bd226f8efab12f5766e77f8355996cd0430b50e0f6ee30258664c494984</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\system_module.h</file>
+         <hash>96c74368801b0a7aaa25aec3ec2cb0d483250385f103ffc1ff64089b4ca2c6d9</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\time\src\sys_time.c</file>
+         <hash>fa2d85ab967b80157caf8483f6e28a23b12b548844a1d80f2fef760cd9b99271</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\time\src\sys_time_local.h</file>
+         <hash>df56f970664902417d798760e44978cf4b84c108cf0761647a383e91db76980c</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\time\sys_time.h</file>
+         <hash>6357468f7670698b16bfb6439d9919ed38eba99d4f03277a8b43ac34586fa1b3</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\system\time\sys_time_definitions.h</file>
+         <hash>46537746b1d12ece6b682c9be1c8f3f219663c638c21a51a973762b7b393afe6</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\tasks.c</file>
+         <hash>e4984945b047095f964572dd1b4a09ebd1a089fc0d0569ef7ac23263a1e82768</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\toolchain_specifics.h</file>
+         <hash>406ef48ae415706beb0796977cab09342077f7b1efc3f24767bd97bbd5e5a433</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\user.h</file>
+         <hash/>
+      </entry>
+      <entry>
+         <file>..\src\main.c</file>
+         <hash/>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\acc.h</file>
+         <hash>ca55f794c40373ebcc7198705c48428dca050bf5a3ba496eac867bb04ca8e2df</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\adc.h</file>
+         <hash>2c335435ec8df2d1a1f9a7c78c8ce6bb766bb5e8e1efde6da017795081b22770</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\aes.h</file>
+         <hash>3af94d673712f402e178c14d7a8b9be4c4fabaaebf62b30bca7bf187c8df4b8b</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\aesb.h</file>
-         <hash>6cf8b450e08e2784cb725988bf491f1e5d709e9d5626b629afb23e9b31fe644e</hash>
+         <hash>18e8d0c5af87c6b29b3ff805a523d37a2c3e09d919311fd8aa198ba036c505c0</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\twihs.h</file>
-         <hash>905c3c3560db36805e4cd95f29708607bf5ed7298911df0df8223617ab0d640b</hash>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\aic.h</file>
+         <hash>43777304a558607243a1689f0e542bf74550806db560e769a38d72a5701a0c4f</hash>
       </entry>
       <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\peripheral\pio\plib_pio.h</file>
-         <hash>a0ab22b40ccdf19d386c3ff1d94425f480cd4f0d1ecef7273d5a0a73bc6efe8a</hash>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\aximx.h</file>
+         <hash>c6016890d2fc1993cb66d929636939624d704e288d8797885b01505b6dc6ba7d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\chipid.h</file>
+         <hash>9caa21b68c593c30a0e6f3ab0b787cb6a2903d4bf63b049e0e8fdc03ba4b56d4</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\classd.h</file>
+         <hash>7350c63b32b4d5cbe17ca9229ea6b346ccc5c7f915550fe0b0929ce2bc3ccd43</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\flexcom.h</file>
+         <hash>0b5fdf66ce2e764dee5aada7620ef880b928f289ab6bf77bbdbe46cf15cc9744</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\gmac.h</file>
+         <hash>b2841c261b5472445224d6d10ce0eccdc5dadc37199323c1bef54f4dca78bddf</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\i2sc.h</file>
+         <hash>0b1e6fe7c4388947232ec40cc900faa439819046fb307ef8dc20f145b64140fe</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\icm.h</file>
+         <hash>5e1f3c928302042f9f098bd6128e799624f560e5da5f21a9cdbdda7c5c263bc7</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\isc.h</file>
+         <hash>b70e94c0d953241df503bad9ebc0279010e149a160b10197e02e82a8c6d69869</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\l2cc.h</file>
+         <hash>cd79d0bafe766c8a1545286e0411b0760c10905fe9129f63ee152f12613023c1</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\lcdc.h</file>
+         <hash>8babd65291460bff76d44ffbf731a2a784b1dcd1ab54507fa2b07feba0f4ab7a</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\matrix.h</file>
+         <hash>671111eb065e7fd4242233c954d31ed7528a9898b1a54bc3e1e7c6494efab930</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\mcan.h</file>
+         <hash>1587bb31dcb8f13b1af3cc8b5b0a3d4969b352a604244595bbed14d5e9c06651</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\mpddrc.h</file>
+         <hash>d3a9cfd99f665ee5cd802b63e07118f60f8ed54222a75b606c234334e310a554</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\pdmic.h</file>
+         <hash>2dfab4986c74451866dedcb3a88218170da83b1418502e48f574a03615dd5fb6</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\pio.h</file>
+         <hash>ee00e4436a5176376ffd2aec411ad90ca36c409d2455bb0ad77428a1b578a170</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\pit.h</file>
-         <hash>74ba953b64edf704e7f4049279338ffdf5716848bb9421aa5df7b44eeec74e79</hash>
+         <hash>60bfec83a87881dfb51825c9a4114bf608564005c3e305ceac8da6ed9de79e4d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\pmc.h</file>
+         <hash>3abb4abb63aa3043cf443f256a6871382d22fb2f0a29c6272a5179690c0133dc</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\ptc.h</file>
+         <hash>afed69fc809014c7809a04985b20a961f9f15fbebbd1a78aee66a03838d5d697</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\pwm.h</file>
+         <hash>3631e9a69339a8302c0de146bc8ea96dae105fe2b1113f14982b17892e80ea4f</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\qspi.h</file>
+         <hash>8f9314b99857fce5f605dce3290f5c86f6b32fdae84bbec216273cbe0c25ba87</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\rstc.h</file>
+         <hash>67d0b531e08ff1934055e4eb56d173b1d91f86819bf0f40d023fbb0c616fefe0</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\rtc.h</file>
+         <hash>d2cb04ddf74afbd0acdd9c6d748a320625270f52921ab00c56036f4599933eb5</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\rxlp.h</file>
+         <hash>a6e0cdb40c635ffb835f33fe96f3470905b0b5f016674cf8b5585549272e0e91</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\sckc.h</file>
+         <hash>e9643b853db91f84322f5fea2448093b75c616d0c885688310134a2f478de4a9</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\sdmmc.h</file>
+         <hash>fab79d466053666512a7220915be96944d49130ffe65564dab751966479cf3b0</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\secumod.h</file>
+         <hash>4dd258b103e2ec6fec745f893ccf602e915ebf272400b7549753660ff051c249</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\sfc.h</file>
+         <hash>af42b1854fea318265fd3b3e63028df9b50ce8c654e3222f5090fe8d368acb0a</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\sfr.h</file>
+         <hash>740d4ce04d73c0fec6da4ccacd81d754658a4889f65d0b07958bfa096cb135f9</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\sfrbu.h</file>
+         <hash>affef214a8f803662d75c3158fc08f332363b8cfa90358d3edc5634c5f0b4d9f</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\sha.h</file>
+         <hash>5a4b7670bd9eb05b2179be50fea971e35222d045b6e8a593c16f1fa4d441008e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\shdwc.h</file>
+         <hash>217a32f2f9727567e57294e87093c2ddf5c64742796e2373bd2f4d29af141223</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\smc.h</file>
+         <hash>3b6425725af73b0c0d81ba94b50feb884944530d53d64d1a0889cb128678e12b</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\spi.h</file>
+         <hash>2b99cc2d5cb8a8b19e525208db7a060b4db599dc2b70de150c6eabdefdced9c7</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\ssc.h</file>
+         <hash>26d54ed9b29d3580610f8b33d5ec063f3a55dc52e443e960b1d9a9f4140e97f4</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\tc.h</file>
+         <hash>40341fcc60ec0f531cae0e947c9cac836ac91192b4c28d0f6809252356a85ce2</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\tdes.h</file>
+         <hash>efaff2786e137c12b814ecaa1dd0867f5b90cb20bc4f12279dac617d8902b805</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\trng.h</file>
+         <hash>40e15b7de4a2ed163cb6d9a4987beb3e38cebd32614baa95ad1644b930928c42</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\twihs.h</file>
+         <hash>cd9afd935c83fa8c90842e0dd635297b0a79e9e69a30508e1cc0c0bfb33d8be5</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\uart.h</file>
+         <hash>6eb987ab87411a47c78b21e48f8c0f5fb01fc0814fa250868fd74adeaa5c15fd</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\udphs.h</file>
+         <hash>1dc938d383ac6a5186199fa89072d3db43e0f1bb011afd7f76f90732a7c2dea7</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\uhphs.h</file>
+         <hash>10d3cb1fea85722765201010ca659698b8969e66a08ec149377a0fe14da7d6e1</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\wdt.h</file>
+         <hash>4aa5bb3dae3d164310711948204c1dd76f154405d0fdf0e9126c5cfcdb020b47</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\component\xdmac.h</file>
+         <hash>b548d9c9f65e4f524fd8556a9fe20618ac9951788a585eb42d8102b4fa6f3bfb</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\acc.h</file>
+         <hash>19020c5fd64867f772e9cb8f6eb5ff423a5f8900dc8190aface6dda93cb4caa6</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\adc.h</file>
+         <hash>c47fa4a8af6da24069912449f314e8da44dcffe7d97f6374f3fe5180ccf83670</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\aes.h</file>
+         <hash>d716dcbff1da32a6cce4704089d66c7fe6595d6dfc40170e0086be1deaf3c4d6</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\aesb.h</file>
+         <hash>8ba74fb740acbaa82107e739950d86c7f8fa79820be5cdc0d226bb6f47bb8eba</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\aic.h</file>
+         <hash>4883ca8c112760a7234878320cebb2c1c3f96dd1efdd3bebcdf1ea3b4c120a87</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\aximx.h</file>
+         <hash>f79aa66fd31b771017a2cb0587f23ad155d18b82d3eb34062b6917ab9ed8fae2</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\chipid.h</file>
+         <hash>cf609a64cdabff09b2ae916c7bfa1082825563356a41b7dd96194de19b6c0de9</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\classd.h</file>
+         <hash>d5dffb44b83ebeac3c40e0f66aa12edf6f47864ffa3a532a5d32e964383a0404</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\flexcom0.h</file>
+         <hash>9312533d06d386d20e8e8ec4b27c758ac88aa6f95e8aa43ea92732c52fe259bf</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\flexcom1.h</file>
+         <hash>733f34fdefdfaf2b65731f9a5b62095781092a71a5e7255c7eb305092b9710eb</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\flexcom2.h</file>
+         <hash>23e11a71d237df3dcf2ed76d2e5defb2e498acdfefc060061b18b2862a2501f1</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\flexcom3.h</file>
+         <hash>c47083085b947ac8c3fd2d9661df67ab23fb3f52811e5eda53f918b099cb162c</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\flexcom4.h</file>
+         <hash>c831d54f91226588b944423569df30141e0b5bfbbdc409260cc39852edf21968</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\gmac.h</file>
+         <hash>ec8809e3188adc0467da58581d45b1906c942e3855e8da9fd4f112b7d82f0c55</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\hsmc.h</file>
+         <hash>a17ecbb9d5730b4414fe166c666f86979eaf5b955a398fcf779ed135e0179bc9</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\i2sc0.h</file>
+         <hash>ca1dcc7a93d8be4c9eb7e8e608b81ba7f5bde1ba1af4c189063fac4fe0456125</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\i2sc1.h</file>
+         <hash>58b78f440ecd644d58391e414c787c165d0b95d51fd429c0017afcdde5d7adc8</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\icm.h</file>
+         <hash>7ed96fd4c174356d7ceba047829486041e74eae02d70de73d24eb4a360fa0061</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\isc.h</file>
+         <hash>e5cb06e3393664661d36048651aa30090ac92d4f83fdd75f7cbbfd453ae5ab91</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\l2cc.h</file>
+         <hash>9e2f7b21b63da96aa05504a02b439c2ffbd42d94f9d99e263b45a33aca2c33ed</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\lcdc.h</file>
+         <hash>152cf0d130a4c3dc0a5c4b7dc3058125abe71c7ebb5a1d85cfca1fd7e7c3a31a</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\matrix0.h</file>
+         <hash>66b8cf9b252ac8adc19797918c81dbc90bd9212e363d2317277b47d76715545e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\matrix1.h</file>
+         <hash>43fa92c60556285d6c6f6947d42bf6a03e0502e0df4cd82714055f80726b8ead</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\mcan0.h</file>
+         <hash>787e1c8fd55005a6a00eee022cd9c118caa9702da0ec807bd5282a9c7ecf663f</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\mcan1.h</file>
+         <hash>4fedd9ad1aabf6dcf7c30274f60fef93282c64216909e19d593684ffe3ab66b6</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\mpddrc.h</file>
+         <hash>25e73071fcebd6cf984bbb6598f7ee1e2be767a59ec4b5ddad861ecbc4f7807a</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\pdmic.h</file>
+         <hash>5e7c213497d8d845c3cf95302e4404372b63b95ee7015c5dd080498aedea3141</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\pio.h</file>
-         <hash>999c387102fe5d68c09f4c8eabe368cd6d9bf77ddda590881f4b06aa073a6a04</hash>
+         <hash>d54d93ded4b3697751043bd119f726d43afa75a73aa1af5680c7ef2d879e8c6b</hash>
       </entry>
       <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\bsp\bsp.h</file>
-         <hash>ff281d2c1aa336ded6368739e309c9411e7f2f928445d811a5f60b89b4fa887b</hash>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\pit.h</file>
+         <hash>b7d98132488d810ab950f6a32a5200dfbf407b512f2300376e52cc7fd66d2ab8</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\pmc.h</file>
+         <hash>3776fa07fd99865e4747c8cd42dbe8b6afe14fb6f432e28817dd2f226e850557</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\ptc.h</file>
+         <hash>8657a2f6d37e3267b2993d5e5256f7be9ec9002938d96a44ff69fbf802ee9974</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\pwm.h</file>
+         <hash>838c1797552b40c0028da5d7598cb348de2f688b8b8ed1f2e4ef092860762742</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\qspi0.h</file>
+         <hash>89288d64eaf22e41f9442438dddaa8ad259467d8653bbe5ef0bb3d608939e3b7</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\qspi1.h</file>
+         <hash>128d9fdd0c7a85fb642b948c9540b622237b6d10984d8db6736f477f07e5a4a6</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\rstc.h</file>
+         <hash>08a936c6ef09bd6c22300defef79d2a0d42a8a4794359442036653cb1093be9b</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\rtc.h</file>
+         <hash>d291dcafbe97bbaf8cdb200123ca2c3fe9fc7643050c4afc055f3b213e58d943</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\rxlp.h</file>
+         <hash>2f6195a628a040ce70b74ff7dc273c5eb1eda8819563e941fdca854d0783d966</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\saic.h</file>
+         <hash>4bccdcd4937eca539fab4b56d92cd7b1d7b0ed85851a2ee00b045006a89f5597</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\sckc.h</file>
+         <hash>83d49333e4bb71ca3860da196f9d43e942ea9be660eef569f7275fbc5f4adf12</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\sdmmc0.h</file>
+         <hash>12baa316c5b9299340b659a2ad72b5533fadc8d7b81d15ba4b1b7abbe69fa385</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\sdmmc1.h</file>
+         <hash>8640b3b4d0816ee1402f50398a379d9b6542df7e2fcc39c6c670261cd626220a</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\secumod.h</file>
+         <hash>fbb925d70c4941468481d958688c90cce5d7ffe926571a6f04dc9773c81a179e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\sfc.h</file>
+         <hash>25ee9d0de8af647ed80f68160bb33c0b9969b517a2ee1e8a359044242010e132</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\sfr.h</file>
+         <hash>a0e9ef0364bbd1650ac111ac6d19d000b2a67ea66081c2c5acef988d9672a9b4</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\sfrbu.h</file>
+         <hash>455ec3deee3609ac4f91ad5ac8e98320924e807f0b47c4eda084780fbd4421f8</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\sha.h</file>
+         <hash>7841585d43e951ebc084589772e729629ba79f8f27deb069d96ed9de012fdcea</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\shdwc.h</file>
+         <hash>3e65c4707f938a049ce6ece16617d0067dd283bae09057e495f49b8d6dd814ab</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\spi0.h</file>
+         <hash>aafc5087ba3eb32008979295e70a2ecaaab968725ee62f3848d605fba0c14fb2</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\spi1.h</file>
+         <hash>e1b7d4cd4a420791dd3cbe86d5a1e794da3ea2755bd1376055e798eb758a4d8b</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\ssc0.h</file>
+         <hash>994fa405e1a8bdda4670ea3248b8fe3be215a6340b3b7f7dfb51799e08e6893c</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\ssc1.h</file>
-         <hash>be9f7b1c64423e02a5fda34cc66bf3b68efe662349dca57c814d34cf6c6c5f9f</hash>
+         <hash>43d8023b591a08f85bd927fc4a3f992534c59e9a3394fb1a235e52019dafc65a</hash>
       </entry>
       <entry>
-         <file>..\src\config\lcdc_rgba8888_mxt_a5d27_som1_ek1_wvga\driver\i2c\drv_i2c_definitions.h</file>
-         <hash>73ed094aba8f1de3ae1497ff414474f02588381d94801f6beac411f8c7f9b329</hash>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\tc0.h</file>
+         <hash>eba6d1ad5a99e63a90108d41a4f0b7cda8e480e06c366a3718ebc1537d3611d2</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\tc1.h</file>
+         <hash>c49411ec9a2c87f9b9a5da0ea23b7637c3af927a8e1b11aecc8c9b6b91a33c20</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\tdes.h</file>
+         <hash>6f70fe4e818667cf6c9776df270d0a7eaeb8d3954184d300f96bc39497930399</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\trng.h</file>
+         <hash>beb7c7a6ecf1fdc8213fa359ae5ee5f8a9ee54c9bfcf83327c9cbaef7ad7b36c</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\twihs0.h</file>
+         <hash>2534e9d2fb1618a3aef3f2802bdbc87618a59bf62ca87b3c72db0acf1a237198</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\twihs1.h</file>
+         <hash>abcf182c6289d92c580f8b04127511200d202bd3fd8d0f49825ad3a111bb97a8</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\uart0.h</file>
+         <hash>8d954022fb93781e802689e805df9d4b5f66d5947be5e194c073183b218edf46</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\uart1.h</file>
+         <hash>41551ac535d8c91a369421b510ef79188f0eff2122ef4547e087ed879dc3b35a</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\uart2.h</file>
+         <hash>2c41a20497a7d257244f2cb974d383f4b97efafe1062d69c8f1a32fd5a9ad7ce</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\uart3.h</file>
+         <hash>8e61d916a2e89deec37d5889dd70844e548f92f9fa015e6c2b37f29e5f05d9e7</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\uart4.h</file>
+         <hash>46038272a674452c25075ccad37ce2c418264dfac37f48a52143705613122c1e</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\udphs.h</file>
+         <hash>8ee8278aac8cddfe9f6556e90e7dc4082a93267534dccc457534908775309b85</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\wdt.h</file>
+         <hash>0fe429269420f170ee10f9ada4e49fd13ce3a21b53f7b947ca2bb5a0fc1257fb</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\xdmac0.h</file>
+         <hash>fe9f7ddde00f3f144ba030ae832e39f2a6a982a7d9a8ceedce1f50f65409eb00</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\instance\xdmac1.h</file>
+         <hash>bc8c276246a2bf9b133be3594afcc785bb49b27973e916c0e6581c0eff9685e1</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\pio\sama5d27cd1g.h</file>
+         <hash>33e5bf4979f2ebb0caf9c949017f4e2d16ba562e8818dd3c19fae6b13d9bb4ff</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMA5D27CD1G_DFP\sama5d27cd1g.h</file>
+         <hash>5ef1164215b5b061a936ebe776dd41e464df03fbbe31223df8278af4f086f17d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core_A\Include\cmsis_compiler.h</file>
+         <hash>5f314774edbd044865df8c2c2c98242bfa8ee8e671559b110d1e139776f45b7f</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core_A\Include\cmsis_cp15.h</file>
+         <hash>5d0183058de6b2245dc949f13bb736cd1e8fe154fa76b643f9fb8947c1b3ee04</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core_A\Include\cmsis_gcc.h</file>
+         <hash>2a47e8836d3e5dc5a02866021af0271a3cb7ae53ca9cd847ac90d3a5e4a3dc20</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core_A\Include\cmsis_iccarm.h</file>
+         <hash>aede1a5428f7b7f4de414f596a2b2b8b1e38a94b7f9762a094ea6d88a7ea5729</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core_A\Include\core_ca.h</file>
+         <hash>ba65df987ecd6e3692f49eda2a6be74d4e1f0a9a3595e7c15c9812c360591f85</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

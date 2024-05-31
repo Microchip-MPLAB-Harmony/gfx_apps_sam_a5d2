@@ -1,28 +1,25 @@
 ﻿---
-title: Harmony 3 Graphics SAM A5D2 Applications Package
+title: Microchip Graphics Suite Harmony SAM A5D2 Applications Package
 nav_order: 1
 ---
 
-# ![MPLAB® Harmony Graphics Suite](./docs/html/mhgs.png) MPLAB® Harmony 3 Graphics application examples for SAM A5D2 Family
+# ![Microchip Graphics Suite](https://mchpgfx.github.io/legato.docs/docs/legato/images/mgs.png) Microchip Graphics Suite Harmony application examples for SAM A5D2 Family
 
-MPLAB® Harmony Graphics Suite  is an extension of the MPLAB® ecosystem for creating
-embedded graphics firmware solutions for Microchip 32-bit SAM and PIC microcontroller
-and microprocessor devices.  Refer to the following links for more information.
+Microchip Graphics Suite Harmony is an extension of the MPLAB® ecosystem for creating
+embedded firmware solutions for Microchip 32-bit SAM and PIC® microcontroller
+and microprocessor devices.  Refer to the following links for more information:
  - [Microchip 32-bit MCUs](https://www.microchip.com/design-centers/32-bit)
  - [Microchip 32-bit MPUs](https://www.microchip.com/design-centers/32-bit-mpus)
  - [Microchip MPLAB® X IDE](https://www.microchip.com/mplab/mplab-x-ide)
  - [Microchip MPLAB® Harmony](https://www.microchip.com/mplab/mplab-harmony)
  - [Microchip MPLAB® Harmony Pages](https://microchip-mplab-harmony.github.io/)
- - [MPLAB® Discover](https://mplab-discover.microchip.com/v1/itemtype/com.microchip.ide.project?s0=Legato)
+ - [MPLAB® Discover](https://mplab-discover.microchip.com/v2?dsl=Microchip+AND+Graphics+AND+Suite)
 
-This repository contains the MPLAB® Harmony 3 Graphics application examples for SAM A5D2 Family. Graphics applications are standalone applications which demonstrate of some of the capabilities of MPLAB® Harmony Graphics Suite.  Refer to the following links for release notes, home page, training materials, framework and application help.
-For more information on the tools, libraries and basic development with the MPLAB® Harmony Graphics Suite, please see the gfx repo also on github.
+This repository contains the Microchip Graphics Suite Harmony application examples for SAM A5D2 Family. Graphics applications are standalone applications which demonstrate of some of the capabilities of Microchip Graphics Suite Harmony.  Refer to the following links for release notes, home page, training materials, framework and application help.
+For more information on the tools, libraries and basic development with the Microchip Graphics Suite, please see the gfx repo also on github.
  - [Release Notes](./release_notes.md)
- - [MPLAB® Harmony License](mplab_harmony_license.md)
- - [MPLAB® Harmony 3 Graphics User Guides Wiki](https://github.com/mchpgfx/legato.docs/wiki)
- - [MPLAB® Harmony 3 Graphics API Help](https://mchpgfx.github.io/legato.docs/html/index.html)
- - [MPLAB® Harmony 3 Graphics Videos](https://www.youtube.com/playlist?list=PL9B4edd-p2ag5xsIIHhja-caKYY7AKPxe)
- - [MPLAB® Harmony 3 Graphics Suite Documentation](https://microchip-mplab-harmony.github.io/gfx/documentation.html)
+ - [MPLAB® Harmony License](./mplab_harmony_license.md)
+ - [Microchip Graphics Suite Harmony User Guides on Microchip Develop Help](https://developerhelp.microchip.com/xwiki/bin/view/software-tools/mgs/mgs-harmony-guide/)
 
 # Contents Summary
 
@@ -53,13 +50,7 @@ The following applications are provided to demonstrate a subset of the capabilit
 |       | [legato_dashboard](./apps/legato_dashboard/readme.md) | Legato Graphics Library and Canvas Example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 |       | [legato_canvas_quickstart](./apps/legato_canvas_quickstart/readme.md) | Legato Graphics Library and simple Canvas Example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 
-## Camera application examples (ISC)
 
-The following application is provided to demonstrate the usage of the SAMA5D2 ISC interface.
-
-| Category | Item | Description | Release Type |
-| --- | --- | ---- |---- |
-|  apps |[isc_camera](./apps/isc_camera/readme.md) | Image Sensor Controller Example using OV5640 module with WVGA display | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 ____
 
 [![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_sam_a5d2/blob/master/mplab_harmony_license.md)

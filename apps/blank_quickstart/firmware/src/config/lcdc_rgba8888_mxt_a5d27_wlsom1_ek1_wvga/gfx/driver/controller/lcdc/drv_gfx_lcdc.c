@@ -240,7 +240,7 @@ gfxResult DRV_LCDC_Initialize()
     uint32_t      upperMargin;
     uint32_t      layerCount;
     uint32_t      bufferCount;
-    
+
     //Clear the descriptor and structures
     memset(drvLayer, 0, sizeof(drvLayer));
 
@@ -262,8 +262,8 @@ gfxResult DRV_LCDC_Initialize()
     LCDC_SetClockDivider(PIXEL_CLOCK_DIV);
 
     //Disable all layers for now
-    LCDC_SetLayerClockGatingDisable(LCDC_LAYER_BASE, false); 
-    LCDC_SetLayerClockGatingDisable(LCDC_LAYER_OVR1, false); 
+    LCDC_SetLayerClockGatingDisable(LCDC_LAYER_BASE, false);
+    LCDC_SetLayerClockGatingDisable(LCDC_LAYER_OVR1, false);
     LCDC_SetLayerClockGatingDisable(LCDC_LAYER_OVR2, false);
     LCDC_SetLayerClockGatingDisable(LCDC_LAYER_HEO, false);
     LCDC_SetLayerClockGatingDisable(LCDC_LAYER_PP, false);
@@ -275,15 +275,15 @@ gfxResult DRV_LCDC_Initialize()
     LCDC_WaitForSyncInProgress();
     LCDC_SetVerticalFrontPorchWidth(lowerMargin); //Set the vertical porches
     LCDC_SetVerticalBackPorchWidth(upperMargin);
-    
+
     LCDC_WaitForSyncInProgress();
     LCDC_SetHorizontalFrontPorchWidth(rightMargin); //Set the horizontal porches
     LCDC_SetHorizontalBackPorchWidth(leftMargin);
-    
+
     LCDC_WaitForSyncInProgress();
     LCDC_SetNumActiveRows(yResolution);
     LCDC_SetNumPixelsPerLine(xResolution);
-    
+
     LCDC_WaitForSyncInProgress();
     LCDC_SetDisplayGuardTime(LCDC_DISPLAY_GUARD_NUM_FRAMES);
     LCDC_SetOutputMode(LCDC_OUTPUT_COLOR_MODE);
@@ -300,25 +300,25 @@ gfxResult DRV_LCDC_Initialize()
     //2. Enable the Pixel Clock
     LCDC_WaitForSyncInProgress();
     LCDC_SetPixelClockEnable(true);
-    
+
     //3. Poll CLKSTS field of the LCDC_LCDSR register to check that the clock is running.
     LCDC_WaitForClockRunning();
-    
+
     // 4. Enable Horizontal and Vertical Synchronization by writing one to the
     // SYNCEN field of the LCDC_LCDEN register.
     LCDC_WaitForSyncInProgress();
     LCDC_SetSYNCEnable(true);
-    
-    // 5. Check that synchronization is up. */    
+
+    // 5. Check that synchronization is up. */
     LCDC_WaitForSynchronization();
-    
-    //6. Enable the display power signal 
+
+    //6. Enable the display power signal
     LCDC_WaitForSyncInProgress();
     LCDC_SetDISPSignalEnable(true);
-    
+
     //7. Wait for power signal to be activated
     LCDC_WaitForDISPSignal();
-    
+
     //8. Enable the backlight
     LCDC_WaitForSyncInProgress();
     LCDC_SetPWMEnable(true);
@@ -329,7 +329,7 @@ gfxResult DRV_LCDC_Initialize()
     drvLayer[0].desc = &channelDesc0;
     drvLayer[1].desc = &channelDesc1;
     drvLayer[2].desc = &channelDesc2;
-    
+
     for (layerCount = 0; layerCount < GFX_LCDC_LAYERS; layerCount++)
     {
         drvLayer[layerCount].hwLayerID = lcdcLayerZOrder[layerCount];
@@ -343,17 +343,17 @@ gfxResult DRV_LCDC_Initialize()
         drvLayer[layerCount].colorspace = LCDC_DEFAULT_GFX_COLOR_MODE;
         drvLayer[layerCount].frameOffset = 0;
         drvLayer[layerCount].enabled    = true;
-        LCDCUpdateDMADescriptor(drvLayer[layerCount].desc, 
+        LCDCUpdateDMADescriptor(drvLayer[layerCount].desc,
                                 (uint32_t) drvLayer[layerCount].baseaddr[0],
                                 0x01,
                                 (uint32_t) drvLayer[layerCount].desc);
-        
+
         //Clear frame buffer
         for(bufferCount = 0; bufferCount < BUFFER_PER_LAYER; ++bufferCount)
         {
             memset(drvLayer[layerCount].baseaddr[bufferCount], 0, sizeof(FRAMEBUFFER_PIXEL_TYPE) * DISPLAY_WIDTH * DISPLAY_HEIGHT);
         }
-       
+
         LCDC_SetLayerClockGatingDisable(drvLayer[layerCount].hwLayerID, false);
         LCDC_SetWindowPosition(drvLayer[layerCount].hwLayerID, drvLayer[layerCount].startx, drvLayer[layerCount].starty);
         LCDC_SetWindowSize(drvLayer[layerCount].hwLayerID, drvLayer[layerCount].resx, drvLayer[layerCount].resy);
@@ -369,16 +369,16 @@ gfxResult DRV_LCDC_Initialize()
         LCDC_SetBlenderDMALayerEnable(drvLayer[layerCount].hwLayerID, true); //Enable blender DMA
         LCDC_SetBlenderLocalAlphaEnable(drvLayer[layerCount].hwLayerID, true); //Use local alpha
         LCDC_SetBlenderIteratedColorEnable(drvLayer[layerCount].hwLayerID, true); //Enable iterated color
-        LCDC_SetBlenderUseIteratedColor(drvLayer[layerCount].hwLayerID, true); //Use iterated color  
+        LCDC_SetBlenderUseIteratedColor(drvLayer[layerCount].hwLayerID, true); //Use iterated color
         LCDC_UpdateOverlayAttributesEnable(drvLayer[layerCount].hwLayerID);
         LCDC_UpdateAttribute(drvLayer[layerCount].hwLayerID); //Apply the attributes
-        
+
         LCDC_SetSytemBusDMABurstEnable(drvLayer[layerCount].hwLayerID, true); // Set DLBO in configuration reg 0
         LCDC_SetSytemBusDMABurstLength(drvLayer[layerCount].hwLayerID, LCDC_BASECFG0_BLEN_AHB_INCR16_Val); // Set burst length
-       
+
         LCDC_SetChannelEnable(drvLayer[layerCount].hwLayerID, true);
         LCDC_IRQ_Enable(LCDC_INTERRUPT_BASE + drvLayer[layerCount].hwLayerID);
-        
+
         drvLayer[layerCount].frontBufferIdx = 0;
         drvLayer[layerCount].backBufferIdx = 0;
         drvLayer[layerCount].updateLock = LAYER_UNLOCKED;
@@ -394,8 +394,8 @@ gfxResult DRV_LCDC_Initialize()
 
     //Register the interrupt handler
     LCDC_IRQ_CallbackRegister(_IntHandlerLayerReadComplete, (uintptr_t) NULL);
-    
-    
+
+
     return GFX_SUCCESS;
 }
 
@@ -444,7 +444,7 @@ gfxDriverIOCTLResponse DRV_LCDC_IOCTL(gfxDriverIOCTLRequest request,
     gfxIOCTLArg_DisplaySize* disp;
     gfxIOCTLArg_LayerRect* rect;
     gfxIOCTLArg_LayerIRQCallback* callback;
-    
+
     switch(request)
     {
         case GFX_IOCTL_LAYER_SWAP:
@@ -458,40 +458,40 @@ gfxDriverIOCTLResponse DRV_LCDC_IOCTL(gfxDriverIOCTLRequest request,
         case GFX_IOCTL_GET_BUFFER_COUNT:
         {
             val = (gfxIOCTLArg_Value*)arg;
-            
+
             val->value.v_uint = BUFFER_PER_LAYER;
-            
+
             return GFX_IOCTL_OK;
         }
         case GFX_IOCTL_GET_DISPLAY_SIZE:
         {
-            disp = (gfxIOCTLArg_DisplaySize*)arg;            
-            
+            disp = (gfxIOCTLArg_DisplaySize*)arg;
+
             disp->width = DISPLAY_WIDTH;
             disp->height = DISPLAY_HEIGHT;
-            
+
             return GFX_IOCTL_OK;
         }
         case GFX_IOCTL_GET_LAYER_COUNT:
         {
             val = (gfxIOCTLArg_Value*)arg;
-            
+
             val->value.v_uint = GFX_LCDC_LAYERS;
-            
+
             return GFX_IOCTL_OK;
         }
         case GFX_IOCTL_GET_ACTIVE_LAYER:
         {
             val = (gfxIOCTLArg_Value*)arg;
-            
+
             val->value.v_uint = activeLayer;
-            
+
             return GFX_IOCTL_OK;
         }
         case GFX_IOCTL_SET_ACTIVE_LAYER:
         {
             val = (gfxIOCTLArg_Value*)arg;
-            
+
             if(val->value.v_uint >= GFX_LCDC_LAYERS)
             {
                 return GFX_IOCTL_ERROR_UNKNOWN;
@@ -499,36 +499,36 @@ gfxDriverIOCTLResponse DRV_LCDC_IOCTL(gfxDriverIOCTLRequest request,
             else
             {
                 activeLayer = val->value.v_uint;
-                
+
                 return GFX_IOCTL_OK;
             }
         }
         case GFX_IOCTL_GET_LAYER_RECT:
         {
             rect = (gfxIOCTLArg_LayerRect*)arg;
-            
-            if(rect->base.id >= GFX_LCDC_LAYERS)        
+
+            if(rect->layer.id >= GFX_LCDC_LAYERS)
                 return GFX_IOCTL_ERROR_UNKNOWN;
-            
-            rect->x = drvLayer[rect->base.id].startx;
-            rect->y = drvLayer[rect->base.id].starty;
-            rect->width = drvLayer[rect->base.id].sizex;
-            rect->height = drvLayer[rect->base.id].sizey;
-            
+
+            rect->x = drvLayer[rect->layer.id].startx;
+            rect->y = drvLayer[rect->layer.id].starty;
+            rect->width = drvLayer[rect->layer.id].sizex;
+            rect->height = drvLayer[rect->layer.id].sizey;
+
             return GFX_IOCTL_OK;
         }
         case GFX_IOCTL_GET_VSYNC_COUNT:
         {
             val = (gfxIOCTLArg_Value*)arg;
-            
+
             val->value.v_uint = vsyncCount;
-            
+
             return GFX_IOCTL_OK;
         }
         case GFX_IOCTL_GET_FRAMEBUFFER:
         {
             val = (gfxIOCTLArg_Value*)arg;
-            
+
             val->value.v_pbuffer = &drvLayer[activeLayer].pixelBuffer[drvLayer[activeLayer].frontBufferIdx];
 
             return GFX_IOCTL_OK;
@@ -536,16 +536,16 @@ gfxDriverIOCTLResponse DRV_LCDC_IOCTL(gfxDriverIOCTLRequest request,
 		case GFX_IOCTL_SET_BRIGHTNESS:
         {
             val = (gfxIOCTLArg_Value*)arg;
-            
+
             LCDC_BrightnessSet(val->value.v_int);
             return GFX_IOCTL_OK;
         }
         case GFX_IOCTL_GET_STATUS:
         {
             val = (gfxIOCTLArg_Value*)arg;
-            
+
             val->value.v_uint = 0;
-            
+
             if (state != DRAW)
             {
                 val->value.v_uint = 1;
@@ -553,24 +553,24 @@ gfxDriverIOCTLResponse DRV_LCDC_IOCTL(gfxDriverIOCTLRequest request,
             }
 
             return GFX_IOCTL_OK;
-        }		
+        }
         case GFX_IOCTL_SET_IRQ_CALLBACK:
         {
             callback = (gfxIOCTLArg_LayerIRQCallback*)arg;
-            
-            if(callback->base.id >= GFX_LCDC_LAYERS)        
+
+            if(callback->layer.id >= GFX_LCDC_LAYERS)
                 return GFX_IOCTL_ERROR_UNKNOWN;
-            
-            drvLayer[callback->base.id].irqCallback = callback->callback;                    
-            
-            return GFX_IOCTL_OK;            
+
+            drvLayer[callback->layer.id].irqCallback = callback->callback;
+
+            return GFX_IOCTL_OK;
         }
         default:
         {
             break;
         }
     }
-    
+
     return GFX_IOCTL_UNSUPPORTED;
 }
 

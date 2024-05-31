@@ -1,0 +1,14 @@
+format_version: v1.0
+configName: lcdc_rgba8888_mxt_a5d29_cu_wvga
+folderName: legato_qs_a5d29_cu_tm5000
+frameworkPath: c:\harmony3_latest
+processor: ATSAMA5D29
+projectName: legato_qs_a5d29_cu_tm5000
+settings:
+  PackageFilter: ''
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: dev_packs\Microchip\SAMA5D2_DFP\1.9.106\atdf\ATSAMA5D29.atdf

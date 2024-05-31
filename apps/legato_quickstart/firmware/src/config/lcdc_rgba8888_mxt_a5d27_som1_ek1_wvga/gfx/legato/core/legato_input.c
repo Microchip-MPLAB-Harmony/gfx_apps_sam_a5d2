@@ -35,6 +35,10 @@
 
 static leInputState _state; // the global input state
 
+#if LE_TOUCH_ORIENTATION != 0
+#pragma message("Warning: Legato touch orientation feature has been deprecated and will be removed in a future release")
+#endif
+
 leInputState* _leGetInputState()
 {
     return &_state;
@@ -43,15 +47,15 @@ leInputState* _leGetInputState()
 leResult leInput_Init()
 {
     memset(&_state, 0, sizeof(leInputState));
-    
+
     _state.enabled = LE_TRUE;
-    
+
     return LE_SUCCESS;
 }
 
 void leInput_Shutdown()
 {
-    
+
 }
 
 leBool leInput_GetEnabled()
@@ -112,7 +116,7 @@ leResult leInput_InjectTouchDown(uint32_t id, int32_t x, int32_t y)
 
     if(evt == NULL)
         return LE_FAILURE;
-    
+
     evt->event.owner = NULL;
     evt->event.id = LE_EVENT_TOUCH_DOWN;
     evt->touchID = id;
@@ -128,7 +132,7 @@ leResult leInput_InjectTouchDown(uint32_t id, int32_t x, int32_t y)
         LE_FREE(evt);
 
         return LE_FAILURE;
-    }    
+    }
 
     return LE_SUCCESS;
 }
@@ -146,7 +150,7 @@ leResult leInput_InjectTouchUp(uint32_t id, int32_t x, int32_t y)
     {
         return LE_FAILURE;
     }
-    
+
     _state.touch[id].valid = LE_FALSE;
 
     // reorient touch coordinates if the user interface is rotated
@@ -182,7 +186,7 @@ leResult leInput_InjectTouchUp(uint32_t id, int32_t x, int32_t y)
     evt->touchID = id;
     evt->x = pnt.x;
     evt->y = pnt.y;
-    
+
 #ifdef INPUT_EVENT_DEBUG
     printf("adding touch up event %i, %i\n", evt->x, evt->y);
 #endif
@@ -192,7 +196,7 @@ leResult leInput_InjectTouchUp(uint32_t id, int32_t x, int32_t y)
         LE_FREE(evt);
 
         return LE_FAILURE;
-    }    
+    }
 
     return LE_SUCCESS;
 }
@@ -220,17 +224,17 @@ leResult leInput_InjectTouchMoved(uint32_t id, int32_t x, int32_t y)
 
     // find any existing touch moved event and overwrite
     node = _leGetEventState()->events.head;
-    
+
     while(node != NULL)
     {
         evtPtr = (leEvent*)node->val;
-        
+
         if(evtPtr->id == LE_EVENT_TOUCH_MOVE)
         {
             evt = (leWidgetEvent_TouchMove*)evtPtr;
-         
+
             if(evt->touchID == id)
-            {   
+            {
 #ifdef INPUT_EVENT_DEBUG
                 printf("overwriting previous move event\n");
 #endif
@@ -249,20 +253,20 @@ leResult leInput_InjectTouchMoved(uint32_t id, int32_t x, int32_t y)
                 pnt.y = x;
                 pnt.x = dispSize.height - 1 - y;
 #endif
-                
+
                 evt->x = x;
                 evt->y = y;
-                
+
                 evt->x = pnt.x;
                 evt->y = pnt.y;
 
                 _state.touch[id].x = pnt.x;
                 _state.touch[id].y = pnt.y;
-                
+
                 return LE_SUCCESS;
             }
         }
-        
+
         node = node->next;
     }
 
@@ -306,7 +310,7 @@ leResult leInput_InjectTouchMoved(uint32_t id, int32_t x, int32_t y)
         LE_FREE(evt);
 
         return LE_FAILURE;
-    }    
+    }
 
     return LE_SUCCESS;
 }
@@ -323,7 +327,7 @@ leEventResult handleTouchDown(leWidgetEvent_TouchDown* evt)
 #if LE_DRIVER_LAYER_MODE == 1
     gfxIOCTLArg_LayerRect layerRect;
 #endif
-    
+
     // find the topmost widget on the topmost layer for the touch event
     for(i = leGetState()->layerList.size - 1; i >= 0; i--)
     {
@@ -337,7 +341,7 @@ leEventResult handleTouchDown(leWidgetEvent_TouchDown* evt)
 // however, the driver could be rendering them at different coordinates
 // the event coordinates may need to be adjusted to account for this
 #if LE_DRIVER_LAYER_MODE == 1
-        layerRect.base.id = i;
+        layerRect.layer.id = i;
         layerRect.x = 0;
         layerRect.y = 0;
         layerRect.width = 0;
@@ -352,11 +356,11 @@ leEventResult handleTouchDown(leWidgetEvent_TouchDown* evt)
         x -= layerRect.x;
         y -= layerRect.y;
 #endif
-        
+
         targetWidget = leUtils_PickFromWidget(&layerState->root, x, y);
-        
+
         if(targetWidget != NULL)
-            break; 
+            break;
     }
 
     // no widget qualified
@@ -371,12 +375,12 @@ leEventResult handleTouchDown(leWidgetEvent_TouchDown* evt)
         return LE_EVENT_DEFERRED;
 
     evt->x = x;
-    evt->y = y;    
-    
+    evt->y = y;
+
     while(targetWidget != NULL)
     {
         targetWidget->fn->_handleEvent(targetWidget, (leEvent*)evt);
-        
+
         if(evt->event.accepted == LE_TRUE)
             break;
 
@@ -393,20 +397,20 @@ leEventResult handleTouchDown(leWidgetEvent_TouchDown* evt)
         leSetFocusWidget(NULL);
     }
 
-#ifdef INPUT_EVENT_DEBUG  
+#ifdef INPUT_EVENT_DEBUG
     printf("handling touch down event %i, %i\n", evt->x, evt->y);
 #endif
-    
+
     return LE_EVENT_HANDLED;
 }
 
-leBool handleTouchUp(leWidgetEvent_TouchUp* evt)
+leEventResult handleTouchUp(leWidgetEvent_TouchUp* evt)
 {
     leWidget* wgt = leGetFocusWidget();
-    
+
     if(wgt == NULL)
         return LE_EVENT_HANDLED;
-        
+
     if(leIsDrawing() == LE_FALSE)
     {
 #if LE_DRIVER_LAYER_MODE == 1
@@ -418,21 +422,21 @@ leBool handleTouchUp(leWidgetEvent_TouchUp* evt)
 
 #ifdef INPUT_EVENT_DEBUG
         printf("handling touch up event %i, %i\n", evt->x, evt->y);
-#endif       
-        
+#endif
+
         return LE_EVENT_HANDLED;
     }
-    
+
     return LE_EVENT_DEFERRED;
 }
 
-leBool handleTouchMoved(leWidgetEvent_TouchMove* evt)
+leEventResult handleTouchMoved(leWidgetEvent_TouchMove* evt)
 {
     leWidget* wgt = leGetFocusWidget();
 
     if(wgt == NULL)
         return LE_EVENT_HANDLED;
-        
+
     if(leIsDrawing() == LE_FALSE)
     {
 #if LE_DRIVER_LAYER_MODE == 1
@@ -441,10 +445,10 @@ leBool handleTouchMoved(leWidgetEvent_TouchMove* evt)
 #endif
        wgt->fn->_handleEvent(wgt, (leEvent*)evt);
 
-#ifdef INPUT_EVENT_DEBUG        
+#ifdef INPUT_EVENT_DEBUG
         printf("handling touch move event %i, %i, %i, %i\n", evt->x, evt->y, evt->prevX, evt->prevY);
 #endif
-        
+
         return LE_EVENT_HANDLED;
     }
 
@@ -459,36 +463,35 @@ leEventResult _leInput_HandleInputEvent(leEvent* evt)
         {
             return handleTouchDown((leWidgetEvent_TouchDown*)evt);
 
-#ifdef INPUT_EVENT_DEBUG                
+#ifdef INPUT_EVENT_DEBUG
             printf("handled touch down\n");
-#endif                
-                
+#endif
+
             break;
         }
         case LE_EVENT_TOUCH_UP:
         {
             return handleTouchUp((leWidgetEvent_TouchUp*)evt);
 
-#ifdef INPUT_EVENT_DEBUG               
+#ifdef INPUT_EVENT_DEBUG
             printf("handled touch up\n");
-#endif                
-                
+#endif
+
             break;
         }
         case LE_EVENT_TOUCH_MOVE:
         {
             return handleTouchMoved((leWidgetEvent_TouchMove*)evt);
-                return LE_FAILURE;
 
-#ifdef INPUT_EVENT_DEBUG                
+#ifdef INPUT_EVENT_DEBUG
             printf("handled touch move\n");
-#endif                
-                
+#endif
+
             break;
         }
         default:
             break;
     }
 
-    return LE_SUCCESS;
+    return LE_EVENT_HANDLED;
 }

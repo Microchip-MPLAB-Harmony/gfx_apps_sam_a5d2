@@ -91,21 +91,21 @@
 
 
 /*** Macros for BSP_MAXTOUCH_CHG pin ***/
-#define BSP_MAXTOUCH_CHG_Set()               (PIOD_REGS->PIO_SODR = (1<<1))
-#define BSP_MAXTOUCH_CHG_Clear()             (PIOD_REGS->PIO_CODR = (1<<1))
+#define BSP_MAXTOUCH_CHG_Set()               (PIOD_REGS->PIO_SODR = ((uint32_t)1U<<1U))
+#define BSP_MAXTOUCH_CHG_Clear()             (PIOD_REGS->PIO_CODR = ((uint32_t)1U<<1U))
 #define BSP_MAXTOUCH_CHG_Toggle()            do {\
-                                            PIOD_REGS->PIO_MSKR = (1<<1); \
-                                            PIOD_REGS->PIO_ODSR ^= (1<<1);\
+                                            PIOD_REGS->PIO_MSKR = ((uint32_t)1U<<1U); \
+                                            PIOD_REGS->PIO_ODSR ^= ((uint32_t)1U<<1U);\
                                         } while (0)
 #define BSP_MAXTOUCH_CHG_OutputEnable()      do {\
-                                            PIOD_REGS->PIO_MSKR = (1<<1); \
-                                            PIOD_REGS->PIO_CFGR |=(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOD_REGS->PIO_MSKR = ((uint32_t)1U<<1U); \
+                                            PIOD_REGS->PIO_CFGR |=((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         }while(0)
 #define BSP_MAXTOUCH_CHG_InputEnable()       do { \
-                                            PIOD_REGS->PIO_MSKR = (1<<1); \
-                                            PIOD_REGS->PIO_CFGR &= ~(1 << PIO_CFGR_DIR_Pos);\
+                                            PIOD_REGS->PIO_MSKR = ((uint32_t)1U<<1U); \
+                                            PIOD_REGS->PIO_CFGR &= ~((uint32_t)1U << PIO_CFGR_DIR_Pos);\
                                         } while (0)
-#define BSP_MAXTOUCH_CHG_Get()               ((PIOD_REGS->PIO_PDSR >> 1) & 0x1)
+#define BSP_MAXTOUCH_CHG_Get()               ((PIOD_REGS->PIO_PDSR >> 1U) & 0x1U)
 #define BSP_MAXTOUCH_CHG_PIN                  PIO_PIN_PD1
 // *****************************************************************************
 /* PIO Ports

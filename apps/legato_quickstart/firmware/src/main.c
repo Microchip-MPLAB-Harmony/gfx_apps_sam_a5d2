@@ -38,7 +38,7 @@ int main ( void )
 {
     /* Initialize all modules */
     SYS_Initialize ( NULL );
-
+    printf("\n\nQuickStart demo for SAMA5D29 Curiosity. \r\n");
     while ( true )
     {
         /* Maintain state machines of all polled MPLAB Harmony modules. */

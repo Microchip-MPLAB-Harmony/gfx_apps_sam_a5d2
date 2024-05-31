@@ -1,7 +1,7 @@
 /*
- * Instance header file for ATSAMA5D28CLD2G
+ * Instance header file for ATSAMA5D29TA100
  *
- * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
  *
  * Subject to your compliance with these terms, you may use Microchip software and any derivatives
  * exclusively with Microchip products. It is your responsibility to comply with third party license
@@ -20,8 +20,8 @@
  *
  */
 
-/* file generated from device description version 2022-02-21T21:02:22Z */
-#ifndef _SAMA5D2_RTC_INSTANCE_
-#define _SAMA5D2_RTC_INSTANCE_
+/* file generated from device description version 2022-11-18T13:40:01Z */
+#ifndef _SAMA5D_RTC_INSTANCE_
+#define _SAMA5D_RTC_INSTANCE_
 
-#endif /* _SAMA5D2_RTC_INSTANCE_ */
+#endif /* _SAMA5D_RTC_INSTANCE_ */

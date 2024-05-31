@@ -1,0 +1,2952 @@
+<!DOCTYPE HTML PUBLIC>
+<HTML>
+<HEAD>
+  <META http-equiv="content-type" content="text/html; charset=UTF-8">
+  </META>
+  <TITLE>Embedded Wizard Code Generation Report</TITLE>
+  <STYLE>
+    *
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+    html
+    {
+      background-color: #FFFFFF;
+    }
+    body
+    {
+      font-family: Segoe UI, Segoe, Helvetica Neue, Helvetica, Tahoma, Verdana, Arial, sans-serif;
+      margin-left: 0em;
+      margin-right: 0em;
+      -webkit-font-smoothing: antialiased;
+    }
+    div.CodeMetrics table, div.Files table
+    {
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      border-spacing: 0;
+    }
+    div.CodeMetrics th, div.Files th
+    {
+      border: 1px solid #DDDDDD;
+      background-color: #F4F4F4;
+      padding: 0.5em;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      cursor: pointer;
+      color: #666666;
+    }
+    div.CodeMetrics th:hover, div.Files th:hover
+    {
+      border: 1px solid #CCCCCC;
+      background-color: #E4E4E4;
+    }
+    div.CodeMetrics th:active, div.Files th:active
+    {
+      border: 1px solid #BBBBBB;
+      background-color: #C4C4C4;
+      color: #000000;
+    }
+    div.CodeMetrics td, div.Files td
+    {
+      border: 1px solid #DDDDDD;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      padding-top: 0.25em;
+      padding-bottom: 0.25em;
+    }
+    div.CodeMetrics tr:nth-child(odd), div.Files tr:nth-child(odd)
+    {
+      background-color: #F8F8F8;
+    }
+    div.CodeMetrics tr td:nth-child(3)
+    {
+      text-align: right;
+    }
+    div.CodeMetrics tr td:nth-child(2)
+    {
+      text-align: center;
+    }
+    div.Files tr td:nth-child(2)
+    {
+      text-align: center;
+    }
+    div.Files tr td:nth-child(3)
+    {
+      text-align: right;
+    }
+    div.CodeMetrics tr:last-child, div.Files tr:last-child
+    {
+      font-size: 100%;
+      font-weight: bold;
+    }
+    div.CodeMetrics tr:last-child td, div.Files tr:last-child td
+    {
+      padding: 0.5em;
+    }
+    div.Summary
+    {
+      margin-left:  2em;
+      margin-right: 2em;
+    }
+    div.Summary table
+    {
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      border-spacing: 0;
+    }
+    div.Summary tr p:nth-child(1)
+    {
+      line-height: 180%;
+      margin-top: -0.3em;
+    }
+    div.Summary tr p:nth-child(2)
+    {
+      margin-top: -0.5em;
+      margin-bottom: 0.2em;
+    }
+    div.Summary td
+    {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      padding-top: 0.3em;
+      padding-bottom: 0.3em;
+    }
+    div.Summary td p:nth-child(1)
+    {
+      padding-top: 0.25em;
+      padding-bottom: 0.25em;
+    }
+    div.Summary td p:nth-child(2)
+    {
+      color: #999999;
+      padding-top: 0.25em;
+      font-size: 80%;
+      line-height: 145%;
+    }
+    div.Summary tr td:nth-child(1)
+    {
+    }
+    div.Summary tr td:nth-child(2)
+    {
+      text-align: right;
+    }
+    th
+    {
+      font-weight: normal;
+    }
+    div.Summary tr
+    {
+      border-top: 1px solid #DDDDDD;
+      border-bottom: 1px solid #DDDDDD;
+    }
+    div.Summary tr.HintRow p
+    {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      line-height: 145%;
+      color: #FF0000;
+      font-size: 80%;
+    }
+    div.footer
+    {
+      height: 4em;
+      background-color: #FFFFFF;
+      margin-top: 1em;
+      margin-bottom: 2em;
+      padding-top: 0em;
+      text-align: center;
+    }
+    div.footer p.footer-1
+    {
+      margin-bottom: 0.1em;
+      font-size: 80%;
+      padding-top: 1em;
+      color: #999999;
+      line-height: 145%;
+    }
+    div.footer p.footer-2
+    {
+      margin-top: 0.1em;
+      margin-bottom: 0.1em;
+      font-size: 80%;
+      color: #999999;
+      line-height: 145%;
+    }
+    div.footer p.footer-3
+    {
+      margin-top: 0.1em;
+      padding-bottom: 2em;
+      font-size: 80%;
+      color: #999999;
+      line-height: 145%;
+    }
+    div.Caption
+    {
+      margin-top: 3em;
+      padding-bottom: 0em;
+      text-align: center;
+    }
+    div.Caption p:nth-child(1)
+    {
+      font-size: 180%;
+      color: #000000;
+    }
+    div.Caption p:nth-child(2)
+    {
+      margin-top: 0.5em;
+      font-size: 100%;
+      color: #999999;
+    }
+    a.LocalLink
+    {
+      text-decoration: none;
+      border-radius: 0.5em;
+      padding-top: 0.0em;
+      padding-bottom: 0.15em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      margin-left: 2em;
+      border: 1px solid #E4E4E4;
+      background-color: #F8F8F8;
+      color: #888888;
+      font-size: 80%;
+    }
+    a.LocalLink:hover
+    {
+      border: 1px solid #CCCCCC;
+      background-color: #E4E4E4;
+      color: #444444;
+    }
+    a.LocalLink:active
+    {
+      border: 1px solid #BBBBBB;
+      background-color: #C4C4C4;
+      color: #000000;
+    }
+  </STYLE>
+</HEAD>
+<BODY>
+  <DIV CLASS=Caption>
+    <P>Code Generation Report</p>
+    <P>created by Embedded Wizard Studio</p>
+  </DIV>
+  <DIV ID=Summary CLASS=Summary>
+    <TABLE>
+      <TR CLASS=InfoRow>
+        <TD>
+          <P>
+            Version of Embedded Wizard Studio
+          </P>
+        </TD>
+        <TD>
+          13.02
+        </TD>
+      </TR>
+      <TR CLASS=InfoRow>
+        <TD>
+          <P>
+            Date of code generation
+          </P>
+        </TD>
+        <TD>
+          16&nbsp;Apr&nbsp;2024<BR>15:46:12
+        </TD>
+      </TR>
+      <TR CLASS=InfoRow>
+        <TD>
+          <P>
+            Selected <a href="https://doc.embedded-wizard.de/profile-member">Profile</a>
+          </P>
+          <P>
+            The Profile contains configuration parameters affecting the code generation.
+          </P>
+        </TD>
+        <TD>
+          Win32
+        </TD>
+      </TR>
+      <TR CLASS=InfoRow>
+        <TD>
+          <P>
+            <a href="https://doc.embedded-wizard.de/platformpackage-attr">Platform Package</a> name
+          </P>
+          <P>
+            Identifies the Code Generator and Resource Converters used during the code generation.
+          </P>
+        </TD>
+        <TD>
+          Windows.Software.RGBA8888
+        </TD>
+      </TR>
+      <TR CLASS=InfoRow>
+        <TD>
+          <P>
+            Default <a href="https://doc.embedded-wizard.de/formatofbitmapresources-attr">conversion mode</a> of Bitmap Resources
+          </P>
+          <P>
+            Controls how pixel data of Bitmap Resources are processed if no other mode has been specified for the respective Bitmap Resource project member. See also the Bitmap Resource attribute <a href="https://doc.embedded-wizard.de/mode-attr">Mode</a>.
+          </P>
+        </TD>
+        <TD>
+          Compressed
+        </TD>
+      </TR>
+      <TR CLASS=InfoRow>
+        <TD>
+          <P>
+            <a href="https://doc.embedded-wizard.de/formatofstringconstants-attr">Conversion mode</a> of all String constants
+          </P>
+          <P>
+            Controls how contents of string Constant members and string literals are processed.
+          </P>
+        </TD>
+        <TD>
+          Compressed
+        </TD>
+      </TR>
+      <TR CLASS=SizeRow>
+        <TD>
+          <P>
+            Estimated total memory (flash) usage
+          </P>
+          <P>
+            It includes the implementation (the logic) of your applicatin, constant data and resources.
+          </P>
+        </TD>
+        <TD>
+          794&nbsp;KB
+        </TD>
+      </TR>
+      <TR CLASS=HintRow>
+        <TD colspan='2'>
+          <P>
+            IMPORTANT: All memory (flash) usage values are roughly estimated.  The size of the resutling binary depends on the target CPU architecture, your C/C++ compiler and the selected compiler optimization modes. Also the estimated size does not include the <a href='https://doc.embedded-wizard.de/platform-package#4'>Runtime Environment</a>, the <a href='https://doc.embedded-wizard.de/platform-package#3'>Graphics Engine</a>, the C standard library (libc), BSP, drivers, etc.. In order to get an exact size of the resulting binary please evaluate the linker's MAP file.
+          </P>
+        </TD>
+      </TR>
+      <TR CLASS=SizeRow>
+        <TD>
+          <P>
+            Estimated memory (flash) usage for <a href="https://doc.embedded-wizard.de/class-member">Classes</a> only <a class=LocalLink href='#Classes'>Show&nbsp;detailed&nbsp;list</a>
+          </P>
+          <P>
+            It includes the implementation (the logic) of the application.
+          </P>
+        </TD>
+        <TD>
+          189&nbsp;KB
+        </TD>
+      </TR>
+      <TR CLASS=SizeRow>
+        <TD>
+          <P>
+            Estimated memory (flash) usage for <a href="https://doc.embedded-wizard.de/constant-member">Constants</a> only <a class=LocalLink href='#Constants'>Show&nbsp;detailed&nbsp;list</a>
+          </P>
+          <P>
+            It includes all Constant members found in your project.
+          </P>
+        </TD>
+        <TD>
+          2&nbsp;KB
+        </TD>
+      </TR>
+      <TR CLASS=SizeRow>
+        <TD>
+          <P>
+            Estimated memory (flash) usage for Strings only <a class=LocalLink href='#Strings'>Show&nbsp;detailed&nbsp;list</a>
+          </P>
+          <P>
+            It includes the converted contents of all string Constant members and string literals found in your project.
+          </P>
+        </TD>
+        <TD>
+          3&nbsp;KB
+        </TD>
+      </TR>
+      <TR CLASS=SizeRow>
+        <TD>
+          <P>
+            Estimated memory (flash) usage for <a href="https://doc.embedded-wizard.de/autoobject-member">Autoobjects</a> only <a class=LocalLink href='#Autoobjects'>Show&nbsp;detailed&nbsp;list</a>
+          </P>
+          <P>
+            It includes the initialization for all Autoobject members (global objects) found in your project.
+          </P>
+        </TD>
+        <TD>
+          1&nbsp;KB
+        </TD>
+      </TR>
+      <TR CLASS=SizeRow>
+        <TD>
+          <P>
+            Estimated memory (flash) usage for <a href="https://doc.embedded-wizard.de/bitmap-resource-member">Bitmap Resources</a> only <a class=LocalLink href='#BitmapResources'>Show&nbsp;detailed&nbsp;list</a>
+          </P>
+          <P>
+            It includes all Bitmap Resource members found in your project together with the converted pixel data.
+          </P>
+        </TD>
+        <TD>
+          573&nbsp;KB
+        </TD>
+      </TR>
+      <TR CLASS=SizeRow>
+        <TD>
+          <P>
+            Estimated memory (flash) usage for <a href="https://doc.embedded-wizard.de/font-resource-member">Font Resources</a> only <a class=LocalLink href='#FontResources'>Show&nbsp;detailed&nbsp;list</a>
+          </P>
+          <P>
+            It includes all Font Resource members found in your project together with the converted glyph pixel data and metrics.
+          </P>
+        </TD>
+        <TD>
+          29&nbsp;KB
+        </TD>
+      </TR>
+      <TR CLASS=SizeRow>
+        <TD>
+          <P>
+            Total size of all generated files <a class=LocalLink href='#Files'>Show&nbsp;detailed&nbsp;list</a>
+          </P>
+          <P>
+            It is the sum of all code files (e.g. C++, C, H, JS) and resource files (e.g. PNG) created during the code generation process.
+          </P>
+        </TD>
+        <TD>
+          3568&nbsp;KB
+        </TD>
+      </TR>
+    </TABLE>
+  </DIV>
+  <DIV ID=Classes CLASS=CodeMetrics>
+    <TABLE>
+      <TR>
+        <TH>
+          Project Member Name
+        </TH>
+        <TH>
+          Content Type
+        </TH>
+        <TH>
+          Size (Bytes)
+        </TH>
+      </TR>
+      <TR>
+        <TD>
+          Application::Application
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          433
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::Background
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          1860
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::BezierClock
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          705
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::Bubble
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          1220
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::ClockScreen
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          3133
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::DatePicker
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          4860
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::DeviceClass
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          269
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::Digit
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          12699
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::SettingsScreen
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          1592
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::StyleScreen
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          1393
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::TimePicker
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          4100
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::TimerScreen
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          2601
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::TimerWheel
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          6184
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::CursorEvent
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          630
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::CursorGrabEvent
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          326
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::CursorHit
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          272
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::DialogContext
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          172
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::DragEvent
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          324
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::Event
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          220
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::Group
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          19108
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::KeyEvent
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          1703
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::KeyPressHandler
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          598
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::LayoutContext
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          172
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::LayoutLineContext
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          176
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::LayoutQuadContext
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          176
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::LineView
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          4907
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::Outline
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          1626
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::PropertyObserver
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          411
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::QuadView
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          7639
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::RectView
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          3699
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::Resource
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          239
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::Root
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          10839
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::RotateTouchHandler
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          3553
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::SimpleTouchHandler
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          4221
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::SlideTouchHandler
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          10820
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::Task
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          387
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::TaskQueue
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          1136
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::Time
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          3419
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::Timer
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          760
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::VerticalList
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          8406
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core::View
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          2399
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::Effect
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          8444
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::EffectTimerClass
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          210
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::Fader
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          331
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::FaderTask
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          1315
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::FloatEffect
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          213
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::Int32Effect
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          285
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::PointEffect
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          409
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::PositionFader
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          2103
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::ShowHideTransition
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          860
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::SlideTransition
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          2625
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::TimingList
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          172
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::Transition
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          308
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::VisibilityFader
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          725
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Graphics::ArcPath
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          5782
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Graphics::Canvas
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          4039
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Graphics::Path
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          795
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Resources::Bitmap
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          510
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Resources::Font
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          712
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Templates::PickerControl
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          293
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Templates::RotaryKnob
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          290
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Views::FillPath
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          1140
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Views::Frame
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          2053
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Views::Image
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          4505
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Views::Line
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          2312
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Views::Rectangle
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          657
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Views::StrokePath
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          1442
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Views::Text
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          9728
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          WidgetSet::PushButton
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          3278
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          WidgetSet::PushButtonConfig
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          544
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          WidgetSet::RadioButton
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          6659
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          WidgetSet::RadioButtonConfig
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          913
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          WidgetSet::WidgetConfig
+        </TD>
+        <TD>
+          Class
+        </TD>
+        <TD>
+          196
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          TOTAL
+        </TD>
+        <TD>
+        </TD>
+        <TD>
+          193235
+        </TD>
+      </TR>
+    </TABLE>
+  </DIV>
+  <DIV ID=Constants CLASS=CodeMetrics>
+    <TABLE>
+      <TR>
+        <TH>
+          Unit Name
+        </TH>
+        <TH>
+          Content Type
+        </TH>
+        <TH>
+          Size (Bytes)
+        </TH>
+      </TR>
+      <TR>
+        <TD>
+          Application
+        </TD>
+        <TD>
+          Constants
+        </TD>
+        <TD>
+          24
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock
+        </TD>
+        <TD>
+          Constants
+        </TD>
+        <TD>
+          1168
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core
+        </TD>
+        <TD>
+          Constants
+        </TD>
+        <TD>
+          228
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects
+        </TD>
+        <TD>
+          Constants
+        </TD>
+        <TD>
+          32
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Graphics
+        </TD>
+        <TD>
+          Constants
+        </TD>
+        <TD>
+          74
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Resources
+        </TD>
+        <TD>
+          Constants
+        </TD>
+        <TD>
+          242
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Views
+        </TD>
+        <TD>
+          Constants
+        </TD>
+        <TD>
+          42
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          WidgetSet
+        </TD>
+        <TD>
+          Constants
+        </TD>
+        <TD>
+          56
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          TOTAL
+        </TD>
+        <TD>
+        </TD>
+        <TD>
+          1866
+        </TD>
+      </TR>
+    </TABLE>
+  </DIV>
+  <DIV ID=Strings CLASS=CodeMetrics>
+    <TABLE>
+      <TR>
+        <TH>
+          Unit Name
+        </TH>
+        <TH>
+          Content Type
+        </TH>
+        <TH>
+          Size (Bytes)
+        </TH>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock
+        </TD>
+        <TD>
+          Strings
+        </TD>
+        <TD>
+          76
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Core
+        </TD>
+        <TD>
+          Strings
+        </TD>
+        <TD>
+          1176
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects
+        </TD>
+        <TD>
+          Strings
+        </TD>
+        <TD>
+          224
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Graphics
+        </TD>
+        <TD>
+          Strings
+        </TD>
+        <TD>
+          400
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Resources
+        </TD>
+        <TD>
+          Strings
+        </TD>
+        <TD>
+          352
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Views
+        </TD>
+        <TD>
+          Strings
+        </TD>
+        <TD>
+          24
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          TOTAL
+        </TD>
+        <TD>
+        </TD>
+        <TD>
+          2252
+        </TD>
+      </TR>
+    </TABLE>
+  </DIV>
+  <DIV ID=BitmapResources CLASS=CodeMetrics>
+    <TABLE>
+      <TR>
+        <TH>
+          Project Member Name
+        </TH>
+        <TH>
+          Content Type
+        </TH>
+        <TH>
+          Size (Bytes)
+        </TH>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::BackgroundFrame
+        </TD>
+        <TD>
+          Bitmap Resource
+        </TD>
+        <TD>
+          231
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::BackgroundPreview
+        </TD>
+        <TD>
+          Bitmap Resource
+        </TD>
+        <TD>
+          33909
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::Blue
+        </TD>
+        <TD>
+          Bitmap Resource
+        </TD>
+        <TD>
+          208560
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::Dark
+        </TD>
+        <TD>
+          Bitmap Resource
+        </TD>
+        <TD>
+          178548
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::Orange
+        </TD>
+        <TD>
+          Bitmap Resource
+        </TD>
+        <TD>
+          159510
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Resources::NavigationIconsMedium
+        </TD>
+        <TD>
+          Bitmap Resource
+        </TD>
+        <TD>
+          5139
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Resources::WhiteBitmapStripe
+        </TD>
+        <TD>
+          Bitmap Resource
+        </TD>
+        <TD>
+          187
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          TOTAL
+        </TD>
+        <TD>
+        </TD>
+        <TD>
+          586084
+        </TD>
+      </TR>
+    </TABLE>
+  </DIV>
+  <DIV ID=FontResources CLASS=CodeMetrics>
+    <TABLE>
+      <TR>
+        <TH>
+          Project Member Name
+        </TH>
+        <TH>
+          Content Type
+        </TH>
+        <TH>
+          Size (Bytes)
+        </TH>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::FontL
+        </TD>
+        <TD>
+          Font Resource
+        </TD>
+        <TD>
+          8473
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::FontXXL
+        </TD>
+        <TD>
+          Font Resource
+        </TD>
+        <TD>
+          20693
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          TOTAL
+        </TD>
+        <TD>
+        </TD>
+        <TD>
+          29166
+        </TD>
+      </TR>
+    </TABLE>
+  </DIV>
+  <DIV ID=Autoobjects CLASS=CodeMetrics>
+    <TABLE>
+      <TR>
+        <TH>
+          Project Member Name
+        </TH>
+        <TH>
+          Content Type
+        </TH>
+        <TH>
+          Size (Bytes)
+        </TH>
+      </TR>
+      <TR>
+        <TD>
+          BezierClock::Device
+        </TD>
+        <TD>
+          Autoobject
+        </TD>
+        <TD>
+          32
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::EffectTimer
+        </TD>
+        <TD>
+          Autoobject
+        </TD>
+        <TD>
+          56
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::ShowHideCentered
+        </TD>
+        <TD>
+          Autoobject
+        </TD>
+        <TD>
+          32
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::SlideDownCentered
+        </TD>
+        <TD>
+          Autoobject
+        </TD>
+        <TD>
+          40
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::SlideLeftCentered
+        </TD>
+        <TD>
+          Autoobject
+        </TD>
+        <TD>
+          40
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::SlideRightCentered
+        </TD>
+        <TD>
+          Autoobject
+        </TD>
+        <TD>
+          40
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          Effects::SlideUpCentered
+        </TD>
+        <TD>
+          Autoobject
+        </TD>
+        <TD>
+          40
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          TOTAL
+        </TD>
+        <TD>
+        </TD>
+        <TD>
+          280
+        </TD>
+      </TR>
+    </TABLE>
+  </DIV>
+  <DIV ID=Files CLASS=Files>
+    <TABLE>
+      <TR>
+        <TH>
+          Generated File Name
+        </TH>
+        <TH>
+          File Type
+        </TH>
+        <TH>
+          Size (Bytes)
+        </TH>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\Application.c
+        </TD>
+        <TD>
+          c
+        </TD>
+        <TD>
+          4768
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\Application.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          1607
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\BezierClock.c
+        </TD>
+        <TD>
+          c
+        </TD>
+        <TD>
+          182260
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\BezierClock.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          3070
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\BezierVariants.c
+        </TD>
+        <TD>
+          c
+        </TD>
+        <TD>
+          1203
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\BezierVariants.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          1576
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\Core.c
+        </TD>
+        <TD>
+          c
+        </TD>
+        <TD>
+          398970
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\Core.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          31881
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\Effects.c
+        </TD>
+        <TD>
+          c
+        </TD>
+        <TD>
+          103656
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\Effects.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          11526
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\Graphics.c
+        </TD>
+        <TD>
+          c
+        </TD>
+        <TD>
+          65508
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\Graphics.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          4177
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\Resources.c
+        </TD>
+        <TD>
+          c
+        </TD>
+        <TD>
+          27870
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\Resources.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          16519
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\Templates.c
+        </TD>
+        <TD>
+          c
+        </TD>
+        <TD>
+          5745
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\Templates.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          1636
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\Views.c
+        </TD>
+        <TD>
+          c
+        </TD>
+        <TD>
+          86051
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\Views.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          4260
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\WidgetSet.c
+        </TD>
+        <TD>
+          c
+        </TD>
+        <TD>
+          54877
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\WidgetSet.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          1754
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_ApplicationApplication.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          7098
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockBackground.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          9756
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockBezierClock.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          7253
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockBubble.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          7412
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockClockScreen.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          8674
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockDatePicker.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          12904
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockDeviceClass.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          2744
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockDigit.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          9477
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockSettingsScreen.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          8910
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockStyleScreen.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          7205
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockTimePicker.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          12741
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockTimerScreen.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          9606
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockTimerWheel.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          13846
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreCursorEvent.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          7414
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreCursorGrabEvent.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          5254
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreCursorHit.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          3257
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreDialogContext.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          2695
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreDragEvent.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          3846
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreEvent.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          2924
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreGroup.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          56495
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreKeyEvent.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          6018
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreKeyPressHandler.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          4423
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreLayoutContext.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          2378
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreLayoutLineContext.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          2399
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreLayoutQuadContext.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          2483
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreLineView.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          6171
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreOutline.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          10939
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CorePropertyObserver.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          2846
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreQuadView.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          6699
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreRectView.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          5809
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreResource.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          2267
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreRoot.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          36585
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreRotateTouchHandler.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          13089
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreSimpleTouchHandler.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          14538
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreSlideTouchHandler.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          15696
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreTask.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          8094
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreTaskQueue.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          5880
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreTime.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          4019
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreTimer.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          4517
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreVerticalList.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          19897
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_CoreView.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          19189
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_EffectsEffect.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          9257
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_EffectsEffectTimerClass.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          2641
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_EffectsFader.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          9139
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_EffectsFaderTask.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          6322
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_EffectsFloatEffect.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          5321
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_EffectsInt32Effect.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          5405
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_EffectsPointEffect.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          5403
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_EffectsPositionFader.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          9140
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_EffectsShowHideTransition.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          6855
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_EffectsSlideTransition.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          7934
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_EffectsTimingList.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          2157
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_EffectsTransition.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          7656
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_EffectsVisibilityFader.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          8128
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_GraphicsArcPath.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          4252
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_GraphicsCanvas.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          17602
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_GraphicsPath.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          16709
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_ResourcesBitmap.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          4065
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_ResourcesFont.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          4684
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_TemplatesPickerControl.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          6562
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_TemplatesRotaryKnob.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          6523
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_ViewsFillPath.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          8590
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_ViewsFrame.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          10114
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_ViewsImage.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          10605
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_ViewsLine.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          7747
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_ViewsRectangle.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          7248
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_ViewsStrokePath.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          9192
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_ViewsText.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          13407
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_WidgetSetPushButton.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          13120
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_WidgetSetPushButtonConfig.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          13080
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_WidgetSetRadioButton.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          15699
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_WidgetSetRadioButtonConfig.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          19321
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_WidgetSetWidgetConfig.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          2280
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\ewfiles.cmake
+        </TD>
+        <TD>
+          cmake
+        </TD>
+        <TD>
+          250
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\ewfiles.inc
+        </TD>
+        <TD>
+          inc
+        </TD>
+        <TD>
+          270
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\ewfiles.lst
+        </TD>
+        <TD>
+          lst
+        </TD>
+        <TD>
+          527
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\ewlocale.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          1445
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockBackgroundFrame.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          2118
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockBackgroundPreview.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          109156
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockBlue.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          664260
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockDark.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          568864
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockFontL.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          30529
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockFontXXL.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          69378
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_BezierClockOrange.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          508360
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_ResourcesNavigationIconsMedium.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          17594
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          C:\Users\i70650\OneDrive - Microchip Technology Inc\Documents\Embedded Wizard 13\Clock_output\_ResourcesWhiteBitmapStripe.h
+        </TD>
+        <TD>
+          h
+        </TD>
+        <TD>
+          1981
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          TOTAL
+        </TD>
+        <TD>
+        </TD>
+        <TD>
+          3653251
+        </TD>
+      </TR>
+    </TABLE>
+  </DIV>
+    <div class='footer'>
+      <p class='footer-1'><a href='http://www.embedded-wizard.de' target='_blank'>Embedded Wizard</a> is a product of <a href='http://www.tara-systems.de' target='_blank'>TARA Systems GmbH</a></p>
+      <p class='footer-2'>Concept and implementation by <span class='autor'>Paul Banach</span> and <span class='autor'>Manfred Schweyer</span></p>
+      <p class='footer-3'><span>Copyright © 2019 TARA Systems GmbH</span></p>
+    </div>
+    <SCRIPT>
+      if ( !Array.from )
+        Array.from = function( arrayLike )
+        {
+          var temp_array = [];
+          var length     = arrayLike.length;
+          for ( var i = 0; i < length; i++ )
+            temp_array.push( arrayLike[i]);
+          return temp_array;
+        };
+      var ths = document.querySelectorAll( 'th' );
+      function hookTable( th )
+      {
+        th.addEventListener( 'click', function()
+        {
+          const tbody   = th.parentNode.parentNode;
+          var   content = Array.from( tbody.querySelectorAll( 'tr' ));
+          var   first   = content.shift();
+          var   last    = content.pop();
+          var   inx     = Array.from( th.parentNode.children ).indexOf( th );
+          var   asc     = !!this.asc;
+          content.sort( function( a, b )
+          {
+            a = a.children[ inx ].innerText || a.children[ inx ].textContent;
+            b = b.children[ inx ].innerText || b.children[ inx ].textContent;
+            if (( a !== '' ) && ( b !== '' ) && !isNaN( a ) && !isNaN( b ))
+              return asc? a - b : b - a;
+            else
+              return asc? a.toString().localeCompare( b ) :
+                          b.toString().localeCompare( a );
+          });
+          content.forEach( function( tr ){ tbody.appendChild( tr ); });
+          tbody.appendChild( last );
+          this.asc = !asc;
+        });
+      }
+      for ( var i = 0; i < ths.length; i++ )
+        hookTable( ths[i]);
+    </SCRIPT>
+  </BODY>
